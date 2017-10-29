@@ -42,28 +42,28 @@ Todos los datos son números enteros a excepción del nombre del jugador, el equ
 - PaymentRequired *(boolean)*
 - KeyRequired *(boolean)*
 - AccessNote
-- Parking
-- ParkingNote
-- AccessibleMale
-- AccessibleFemale
-- AccessibleUnisex
-- AccessibleNote
+- Parking *(boolean)*
+- ParkingNote *(boolean)*
+- AccessibleMale *(boolean)*
+- AccessibleFemale *(boolean)*
+- AccessibleUnisex *(boolean)*
+- AccessibleNote *(boolean)*
 - MLAK
 - ParkingAccessible
 - AccessibleParkingNote
-- Ambulant
+- Ambulant *(boolean)*
 - LHTransfer
 - RHTransfer
-- AdultChange
-- IsOpen
-- OpeningHoursSchedule
-- OpeningHoursNote
-- BabyChange
-- Showers
-- DrinkingWater
-- SharpsDisposal
-- SanitaryDisposal
-- IconURL
+- AdultChange *(boolean)*
+- IsOpen *(boolean)*
+- OpeningHoursSchedule *(boolean)*
+- OpeningHoursNote *(boolean)*
+- BabyChange *(boolean)*
+- Showers *(boolean)*
+- DrinkingWater *(boolean)*
+- SharpsDisposal *(boolean)*
+- SanitaryDisposal *(boolean)*
+- IconURL *(string)*
 - IconAltText
 - Notes
 - Status
