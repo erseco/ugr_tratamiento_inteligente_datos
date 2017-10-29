@@ -73,7 +73,7 @@ Todos los datos son números enteros a excepción del nombre del jugador, el equ
 
 ## Minería de datos
 
-Hemos decidido realizar el trabajo utilizando las herramientas R y KNIME debido a la potencia de la primera ya la sencillez de uso de la segunda.
+Se ha decidido realizar el trabajo utilizando las herramientas R y KNIME debido a la potencia de la primera ya la sencillez de uso de la segunda.
 
 ### Pre-procesamiento de datos
 
