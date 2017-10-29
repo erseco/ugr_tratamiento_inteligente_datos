@@ -65,7 +65,7 @@ Todos los datos son números enteros a excepción del nombre del jugador, el equ
 - SanitaryDisposal *(boolean)*
 - IconURL *(string)*
 - IconAltText
-- Notes
+- Notes *(string)*
 - Status
 - Latitude
 - Longitude
