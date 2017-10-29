@@ -1,7 +1,5 @@
 # National Public Toilet Map
 
-> Ernesto Serrano Collado
-
 ## Introducción
 
 El *Mapa nacional de baños públicos* muestra la ubicación de más de **17.000** baños públicos y privados en toda Australia. Los detalles de las instalaciones sanitarias también se pueden encontrar a lo largo de las principales rutas de viaje y también para viajes más cortos. Se proporciona información útil sobre cada baño, como la ubicación, el horario de apertura, la disponibilidad de habitaciones para bebés, la accesibilidad para personas con discapacidades y los detalles de otros baños cercanos.
@@ -78,3 +76,5 @@ Se ha decidido realizar el trabajo utilizando las herramientas R y KNIME debido 
 ### Pre-procesamiento de datos
 
 La primera fase será la de realizar un pre-procesado de los datos mediante técnicas de estadística descriptiva con el objetivo de conocer nuestro *dataset* para poder realizar posteriormente otras tareas.
+
+
