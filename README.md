@@ -71,10 +71,12 @@ Todos los datos son números enteros a excepción del nombre del jugador, el equ
 
 ## Minería de datos
 
-Se ha decidido realizar el trabajo utilizando las herramientas R y KNIME debido a la potencia de la primera ya la sencillez de uso de la segunda.
+Se ha decidido realizar el trabajo utilizando la herramienta KNIME debido a la sencillez de uso al ser una herramienta visual.
 
 ### Pre-procesamiento de datos
 
 La primera fase será la de realizar un pre-procesado de los datos mediante técnicas de estadística descriptiva con el objetivo de conocer nuestro *dataset* para poder realizar posteriormente otras tareas.
 
+Lo primero de todo hemos agregado un nodo FileReader que hemos configurado para leer nuestro dataset, en el mismo se han configurado los tipos de columna ya que por defecto KNIME lo lee todo automáticamente como cadenas.
 
+Se ha agregado un nodo de estadísticas para ver una primera aproximación visual de los datos que tenemos.
