@@ -12,7 +12,7 @@
 </config>
 <config key="column_domain">
 <config key="possible_values">
-<entry key="array-size" type="xint" value="26"/>
+<entry key="array-size" type="xint" value="25"/>
 <config key="0">
 <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
 <config key="org.knime.core.data.def.StringCell">
@@ -130,40 +130,34 @@
 <config key="19">
 <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
 <config key="org.knime.core.data.def.StringCell">
-<entry key="StringCell" type="xstring" value="IsOpen"/>
+<entry key="StringCell" type="xstring" value="BabyChange"/>
 </config>
 </config>
 <config key="20">
 <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
 <config key="org.knime.core.data.def.StringCell">
-<entry key="StringCell" type="xstring" value="BabyChange"/>
+<entry key="StringCell" type="xstring" value="Showers"/>
 </config>
 </config>
 <config key="21">
 <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
 <config key="org.knime.core.data.def.StringCell">
-<entry key="StringCell" type="xstring" value="Showers"/>
+<entry key="StringCell" type="xstring" value="DrinkingWater"/>
 </config>
 </config>
 <config key="22">
 <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
 <config key="org.knime.core.data.def.StringCell">
-<entry key="StringCell" type="xstring" value="DrinkingWater"/>
+<entry key="StringCell" type="xstring" value="SharpsDisposal"/>
 </config>
 </config>
 <config key="23">
 <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
 <config key="org.knime.core.data.def.StringCell">
-<entry key="StringCell" type="xstring" value="SharpsDisposal"/>
-</config>
-</config>
-<config key="24">
-<entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
-<config key="org.knime.core.data.def.StringCell">
 <entry key="StringCell" type="xstring" value="SanitaryDisposal"/>
 </config>
 </config>
-<config key="25">
+<config key="24">
 <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
 <config key="org.knime.core.data.def.StringCell">
 <entry key="StringCell" type="xstring" value="Status"/>

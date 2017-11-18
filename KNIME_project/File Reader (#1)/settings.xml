@@ -72,7 +72,7 @@
 <entry key="MissValuePattern" type="xstring" value="?"/>
 <entry key="FormatParameter" type="xstring" isnull="true" value=""/>
 <entry key="ReadPossValsFromFile" type="xboolean" value="false"/>
-<entry key="SkipThisColumn" type="xboolean" value="false"/>
+<entry key="SkipThisColumn" type="xboolean" value="true"/>
 <entry key="ColumnName" type="xstring" value="URL"/>
 <config key="ColumnClass">
 <entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
@@ -80,11 +80,11 @@
 </config>
 </config>
 <config key="1">
-<entry key="UserSetValues" type="xboolean" value="false"/>
+<entry key="UserSetValues" type="xboolean" value="true"/>
 <entry key="MissValuePattern" type="xstring" value="?"/>
 <entry key="FormatParameter" type="xstring" isnull="true" value=""/>
 <entry key="ReadPossValsFromFile" type="xboolean" value="false"/>
-<entry key="SkipThisColumn" type="xboolean" value="false"/>
+<entry key="SkipThisColumn" type="xboolean" value="true"/>
 <entry key="ColumnName" type="xstring" value="Name"/>
 <config key="ColumnClass">
 <entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
@@ -92,11 +92,11 @@
 </config>
 </config>
 <config key="2">
-<entry key="UserSetValues" type="xboolean" value="false"/>
+<entry key="UserSetValues" type="xboolean" value="true"/>
 <entry key="MissValuePattern" type="xstring" value="?"/>
 <entry key="FormatParameter" type="xstring" isnull="true" value=""/>
 <entry key="ReadPossValsFromFile" type="xboolean" value="false"/>
-<entry key="SkipThisColumn" type="xboolean" value="false"/>
+<entry key="SkipThisColumn" type="xboolean" value="true"/>
 <entry key="ColumnName" type="xstring" value="Address1"/>
 <config key="ColumnClass">
 <entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
@@ -140,11 +140,11 @@
 </config>
 </config>
 <config key="6">
-<entry key="UserSetValues" type="xboolean" value="false"/>
+<entry key="UserSetValues" type="xboolean" value="true"/>
 <entry key="MissValuePattern" type="xstring" value="?"/>
 <entry key="FormatParameter" type="xstring" isnull="true" value=""/>
 <entry key="ReadPossValsFromFile" type="xboolean" value="false"/>
-<entry key="SkipThisColumn" type="xboolean" value="false"/>
+<entry key="SkipThisColumn" type="xboolean" value="true"/>
 <entry key="ColumnName" type="xstring" value="AddressNote"/>
 <config key="ColumnClass">
 <entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
@@ -618,12 +618,12 @@
 <entry key="index" type="xint" value="1"/>
 <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
 <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
-<entry key="port_object_summary" type="xstring" value="Rows: 18865, Cols: 44"/>
+<entry key="port_object_summary" type="xstring" value="Rows: 18865, Cols: 40"/>
 <entry key="port_dir_location" type="xstring" value="port_1"/>
 </config>
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="0019776f-ccaa-44dd-a659-bd680ed49ea2"/>
+<entry key="file_store_id" type="xstring" value="93884e56-b165-49ab-b293-3983ddd6333a"/>
 </config>
 </config>
