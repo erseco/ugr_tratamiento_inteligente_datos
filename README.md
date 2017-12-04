@@ -65,8 +65,8 @@ Todos los datos son números enteros a excepción del nombre del jugador, el equ
 - IconAltText
 - Notes *(string)*
 - Status
-- Latitude
-- Longitude
+- Latitude *(double)*
+- Longitude *(double)*
 
 
 ## Minería de datos
