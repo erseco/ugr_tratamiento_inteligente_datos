@@ -167,7 +167,7 @@ Una vez corregidos los datos hemos visualizado los distintos puntos en el mapa p
 ### Asociacion
 
 
-## Conclusiones
+## Conclusiones
 
 A nivel técnico sobre las herramientas empleadas, he llegado a la conclusión de que aunque KNIME consuma muchos recursos es una herramienta muy util y muy sencilla de utilizar, en cambio R tiene una curva de aprendizaje mas alta pero permite mucha versatilidad en los datos aparte de ser rapidísima.
 
