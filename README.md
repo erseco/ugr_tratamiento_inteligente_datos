@@ -24,12 +24,12 @@ Todos los datos son números enteros a excepción del nombre del jugador, el equ
 
 - ToiletID *(integer)*
 - URL *(string)*
-- Name *(omitido)*
-- Address1 *(omitido)*
+- ~~Name *(omitido)*~~
+- ~~Address1 *(omitido)*~~
 - Town *(string)*
 - State *(string)*
 - Postcode *(integer)*
-- AddressNote *(omitido)*
+- ~~AddressNote *(omitido)*~~
 - Male *(boolean)*
 - Female *(boolean)*
 - Unisex *(boolean)*
