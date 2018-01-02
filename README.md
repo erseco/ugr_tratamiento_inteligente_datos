@@ -4,11 +4,11 @@
 
 El *Mapa nacional de baños públicos* muestra la ubicación de más de **17.000** baños públicos y privados en toda Australia. Los detalles de las instalaciones sanitarias también se pueden encontrar a lo largo de las principales rutas de viaje y también para viajes más cortos. Se proporciona información útil sobre cada baño, como la ubicación, el horario de apertura, la disponibilidad de habitaciones para bebés, la accesibilidad para personas con discapacidades y los detalles de otros baños cercanos.
 
-Es un *dataset* curioso y perfecto para practicar minería de datos para la asignatura *Trataiento Inteligente de Datos* del *Master Profesional en Ingeniería Informática*. El *dataset* se puede extraer libremente desde la web: https://data.gov.au/dataset/national-public-toilet-map
+Es un *dataset* curioso y perfecto para practicar minería de datos para la asignatura *Tratamiento Inteligente de Datos* del *Master Profesional en Ingeniería Informática*. El *dataset* se puede extraer libremente desde la web: https://data.gov.au/dataset/national-public-toilet-map
 
 ### *Dataset*
 
-El *dataset* escogido contiene las estadísticas de los 17,000 baños públicos y privados en toda Australia. Las estadísticas cuentan con los siguientes datos:
+El *dataset* escogido contiene las estadísticas de los 17.000 baños públicos y privados en toda Australia. Las estadísticas cuentan entre otros con los siguientes datos:
 
 1. toilet name.
 2. address.
@@ -24,12 +24,12 @@ Todos los datos son números enteros a excepción del nombre del jugador, el equ
 
 - ToiletID *(integer)*
 - URL *(string)*
-- Name *(string)*
-- Address1 *(string)*
+- Name *(omitido)*
+- Address1 *(omitido)*
 - Town *(string)*
 - State *(string)*
 - Postcode *(integer)*
-- AddressNote *(string)*
+- AddressNote *(omitido)*
 - Male *(boolean)*
 - Female *(boolean)*
 - Unisex *(boolean)*
@@ -39,44 +39,56 @@ Todos los datos son números enteros a excepción del nombre del jugador, el equ
 - AccessLimited *(boolean)*
 - PaymentRequired *(boolean)*
 - KeyRequired *(boolean)*
-- AccessNote
+- AccessNote *(omitido)*
 - Parking *(boolean)*
-- ParkingNote *(boolean)*
+- ParkingNote *(omitido)*
 - AccessibleMale *(boolean)*
 - AccessibleFemale *(boolean)*
 - AccessibleUnisex *(boolean)*
 - AccessibleNote *(boolean)*
-- MLAK
+- MLAK *(omitido)*
 - ParkingAccessible
-- AccessibleParkingNote
+- AccessibleParkingNote *(omitido)*
 - Ambulant *(boolean)*
-- LHTransfer
-- RHTransfer
+- LHTransfer *(omitido)*
+- RHTransfer *(omitido)*
 - AdultChange *(boolean)*
-- IsOpen *(boolean)*
-- OpeningHoursSchedule *(boolean)*
-- OpeningHoursNote *(boolean)*
+- IsOpen *(list)*
+- OpeningHoursSchedule *(omitido)*
+- OpeningHoursNote *(omitido)*
 - BabyChange *(boolean)*
 - Showers *(boolean)*
 - DrinkingWater *(boolean)*
 - SharpsDisposal *(boolean)*
 - SanitaryDisposal *(boolean)*
-- IconURL *(string)*
-- IconAltText
-- Notes *(string)*
-- Status
-- Latitude
-- Longitude
+- IconURL *(omitido)*
+- IconAltText *(omitido)*
+- Notes *(omitido)*
+- Status *(string)*
+- Latitude *(double)*
+- Longitude *(double)*
 
 
 ## Minería de datos
 
-Se ha decidido realizar el trabajo utilizando la herramienta KNIME debido a la sencillez de uso al ser una herramienta visual.
+Se ha decidido realizar el trabajo utilizando la herramienta KNIME debido a la sencillez de uso al ser una herramienta visual que hace muy sencillo el poder ir probando las distintas técnicas.
 
 ### Pre-procesamiento de datos
 
-La primera fase será la de realizar un pre-procesado de los datos mediante técnicas de estadística descriptiva con el objetivo de conocer nuestro *dataset* para poder realizar posteriormente otras tareas.
+Antes de aplicar las técnicas aprendidas en la asignatura realizaremos un pre-procesado de los datos mediante técnicas de estadística descriptiva con el objetivo de conocer nuestro *dataset* para poder utilizar posteriormente las distintas técnicas.
 
-Lo primero de todo hemos agregado un nodo FileReader que hemos configurado para leer nuestro dataset, en el mismo se han configurado los tipos de columna ya que por defecto KNIME lo lee todo automáticamente como cadenas.
+Lo primero de todo hemos agregado un nodo *FileReader* que hemos configurado para leer nuestro dataset, en el mismo se han configurado los tipos de columna ya que por defecto *KNIME* lo lee todo automáticamente como cadenas y muchos de nuestros datos son de tipo booleano y de tipo numérico. Además se han omitido desde el propio *FileReader* algunas columnas que contenían textos que no nos resultan útiles para el procesamientos
 
 Se ha agregado un nodo de estadísticas para ver una primera aproximación visual de los datos que tenemos.
+
+
+Agrupamiento
+
+
+Clasificación
+
+
+Regresión
+
+
+

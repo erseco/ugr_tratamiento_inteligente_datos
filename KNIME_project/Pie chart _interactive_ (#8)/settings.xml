@@ -5,11 +5,37 @@
 <config key="internal_node_subsettings">
 <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
 </config>
-<config key="model"/>
+<config key="model">
+<config key="allRows_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="allRows" type="xboolean" value="true"/>
+<config key="noOfRows_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_integer"/>
+<entry key="EnabledStatus" type="xboolean" value="false"/>
+</config>
+<entry key="noOfRows" type="xint" value="2500"/>
+<config key="PieColName_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="PieColName" type="xstring" value="Male"/>
+<config key="aggrMethod_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+<entry key="EnabledStatus" type="xboolean" value="false"/>
+</config>
+<entry key="aggrMethod" type="xstring" value="COUNT"/>
+<config key="aggrColumn_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="aggrColumn" type="xstring" isnull="true" value=""/>
+</config>
 <entry key="customDescription" type="xstring" isnull="true" value=""/>
 <entry key="state" type="xstring" value="CONFIGURED"/>
-<entry key="factory" type="xstring" value="org.knime.base.node.viz.plotter.box.BoxPlotNodeFactory"/>
-<entry key="node-name" type="xstring" value="Box Plot"/>
+<entry key="factory" type="xstring" value="org.knime.base.node.viz.pie.node.interactive.InteractivePieNodeFactory"/>
+<entry key="node-name" type="xstring" value="Pie chart (interactive)"/>
 <entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
 <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.base"/>
 <entry key="node-bundle-vendor" type="xstring" value="KNIME GmbH, Konstanz, Germany"/>
@@ -19,15 +45,10 @@
 <entry key="node-feature-vendor" type="xstring" value="KNIME GmbH, Konstanz, Germany"/>
 <entry key="node-feature-version" type="xstring" value="3.4.1.v201709070950"/>
 <config key="factory_settings"/>
-<entry key="name" type="xstring" value="Box Plot"/>
+<entry key="name" type="xstring" value="Pie chart (interactive)"/>
 <entry key="hasContent" type="xboolean" value="false"/>
 <entry key="isInactive" type="xboolean" value="false"/>
-<config key="ports">
-<config key="port_1">
-<entry key="index" type="xint" value="1"/>
-<entry key="port_dir_location" type="xstring" isnull="true" value=""/>
-</config>
-</config>
+<config key="ports"/>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
 <entry key="file_store_id" type="xstring" isnull="true" value=""/>

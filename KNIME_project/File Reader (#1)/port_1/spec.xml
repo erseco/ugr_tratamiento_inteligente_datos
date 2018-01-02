@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="spec.xml">
 <entry key="spec_name" type="xstring" value="latest-csv-export.csv"/>
-<entry key="number_columns" type="xint" value="40"/>
+<entry key="number_columns" type="xint" value="42"/>
 <config key="column_spec_0">
-<entry key="column_name" type="xstring" value="Town"/>
+<entry key="column_name" type="xstring" value="Name"/>
 <config key="element_names">
 <entry key="array-size" type="xint" value="0"/>
 </config>
@@ -14,6 +14,28 @@
 <config key="column_properties"/>
 </config>
 <config key="column_spec_1">
+<entry key="column_name" type="xstring" value="Address1"/>
+<config key="element_names">
+<entry key="array-size" type="xint" value="0"/>
+</config>
+<config key="column_type">
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
+</config>
+<config key="column_domain"/>
+<config key="column_properties"/>
+</config>
+<config key="column_spec_2">
+<entry key="column_name" type="xstring" value="Town"/>
+<config key="element_names">
+<entry key="array-size" type="xint" value="0"/>
+</config>
+<config key="column_type">
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
+</config>
+<config key="column_domain"/>
+<config key="column_properties"/>
+</config>
+<config key="column_spec_3">
 <entry key="column_name" type="xstring" value="State"/>
 <config key="element_names">
 <entry key="array-size" type="xint" value="0"/>
@@ -76,7 +98,7 @@
 </config>
 <config key="column_properties"/>
 </config>
-<config key="column_spec_2">
+<config key="column_spec_4">
 <entry key="column_name" type="xstring" value="Postcode"/>
 <config key="element_names">
 <entry key="array-size" type="xint" value="0"/>
@@ -100,7 +122,7 @@
 </config>
 <config key="column_properties"/>
 </config>
-<config key="column_spec_3">
+<config key="column_spec_5">
 <entry key="column_name" type="xstring" value="Male"/>
 <config key="element_names">
 <entry key="array-size" type="xint" value="0"/>
@@ -139,7 +161,7 @@
 </config>
 <config key="column_properties"/>
 </config>
-<config key="column_spec_4">
+<config key="column_spec_6">
 <entry key="column_name" type="xstring" value="Female"/>
 <config key="element_names">
 <entry key="array-size" type="xint" value="0"/>
@@ -178,7 +200,7 @@
 </config>
 <config key="column_properties"/>
 </config>
-<config key="column_spec_5">
+<config key="column_spec_7">
 <entry key="column_name" type="xstring" value="Unisex"/>
 <config key="element_names">
 <entry key="array-size" type="xint" value="0"/>
@@ -217,7 +239,7 @@
 </config>
 <config key="column_properties"/>
 </config>
-<config key="column_spec_6">
+<config key="column_spec_8">
 <entry key="column_name" type="xstring" value="DumpPoint"/>
 <config key="element_names">
 <entry key="array-size" type="xint" value="0"/>
@@ -256,7 +278,7 @@
 </config>
 <config key="column_properties"/>
 </config>
-<config key="column_spec_7">
+<config key="column_spec_9">
 <entry key="column_name" type="xstring" value="FacilityType"/>
 <config key="element_names">
 <entry key="array-size" type="xint" value="0"/>
@@ -349,7 +371,7 @@
 </config>
 <config key="column_properties"/>
 </config>
-<config key="column_spec_8">
+<config key="column_spec_10">
 <entry key="column_name" type="xstring" value="ToiletType"/>
 <config key="element_names">
 <entry key="array-size" type="xint" value="0"/>
@@ -412,7 +434,7 @@
 </config>
 <config key="column_properties"/>
 </config>
-<config key="column_spec_9">
+<config key="column_spec_11">
 <entry key="column_name" type="xstring" value="AccessLimited"/>
 <config key="element_names">
 <entry key="array-size" type="xint" value="0"/>
@@ -451,7 +473,7 @@
 </config>
 <config key="column_properties"/>
 </config>
-<config key="column_spec_10">
+<config key="column_spec_12">
 <entry key="column_name" type="xstring" value="PaymentRequired"/>
 <config key="element_names">
 <entry key="array-size" type="xint" value="0"/>
@@ -490,7 +512,7 @@
 </config>
 <config key="column_properties"/>
 </config>
-<config key="column_spec_11">
+<config key="column_spec_13">
 <entry key="column_name" type="xstring" value="KeyRequired"/>
 <config key="element_names">
 <entry key="array-size" type="xint" value="0"/>
@@ -529,7 +551,7 @@
 </config>
 <config key="column_properties"/>
 </config>
-<config key="column_spec_12">
+<config key="column_spec_14">
 <entry key="column_name" type="xstring" value="AccessNote"/>
 <config key="element_names">
 <entry key="array-size" type="xint" value="0"/>
@@ -540,7 +562,7 @@
 <config key="column_domain"/>
 <config key="column_properties"/>
 </config>
-<config key="column_spec_13">
+<config key="column_spec_15">
 <entry key="column_name" type="xstring" value="Parking"/>
 <config key="element_names">
 <entry key="array-size" type="xint" value="0"/>
@@ -579,7 +601,7 @@
 </config>
 <config key="column_properties"/>
 </config>
-<config key="column_spec_14">
+<config key="column_spec_16">
 <entry key="column_name" type="xstring" value="ParkingNote"/>
 <config key="element_names">
 <entry key="array-size" type="xint" value="0"/>
@@ -590,7 +612,7 @@
 <config key="column_domain"/>
 <config key="column_properties"/>
 </config>
-<config key="column_spec_15">
+<config key="column_spec_17">
 <entry key="column_name" type="xstring" value="AccessibleMale"/>
 <config key="element_names">
 <entry key="array-size" type="xint" value="0"/>
@@ -629,7 +651,7 @@
 </config>
 <config key="column_properties"/>
 </config>
-<config key="column_spec_16">
+<config key="column_spec_18">
 <entry key="column_name" type="xstring" value="AccessibleFemale"/>
 <config key="element_names">
 <entry key="array-size" type="xint" value="0"/>
@@ -668,7 +690,7 @@
 </config>
 <config key="column_properties"/>
 </config>
-<config key="column_spec_17">
+<config key="column_spec_19">
 <entry key="column_name" type="xstring" value="AccessibleUnisex"/>
 <config key="element_names">
 <entry key="array-size" type="xint" value="0"/>
@@ -707,7 +729,7 @@
 </config>
 <config key="column_properties"/>
 </config>
-<config key="column_spec_18">
+<config key="column_spec_20">
 <entry key="column_name" type="xstring" value="AccessibleNote"/>
 <config key="element_names">
 <entry key="array-size" type="xint" value="0"/>
@@ -718,7 +740,7 @@
 <config key="column_domain"/>
 <config key="column_properties"/>
 </config>
-<config key="column_spec_19">
+<config key="column_spec_21">
 <entry key="column_name" type="xstring" value="MLAK"/>
 <config key="element_names">
 <entry key="array-size" type="xint" value="0"/>
@@ -757,7 +779,7 @@
 </config>
 <config key="column_properties"/>
 </config>
-<config key="column_spec_20">
+<config key="column_spec_22">
 <entry key="column_name" type="xstring" value="ParkingAccessible"/>
 <config key="element_names">
 <entry key="array-size" type="xint" value="0"/>
@@ -796,7 +818,7 @@
 </config>
 <config key="column_properties"/>
 </config>
-<config key="column_spec_21">
+<config key="column_spec_23">
 <entry key="column_name" type="xstring" value="AccessibleParkingNote"/>
 <config key="element_names">
 <entry key="array-size" type="xint" value="0"/>
@@ -807,7 +829,7 @@
 <config key="column_domain"/>
 <config key="column_properties"/>
 </config>
-<config key="column_spec_22">
+<config key="column_spec_24">
 <entry key="column_name" type="xstring" value="Ambulant"/>
 <config key="element_names">
 <entry key="array-size" type="xint" value="0"/>
@@ -846,7 +868,7 @@
 </config>
 <config key="column_properties"/>
 </config>
-<config key="column_spec_23">
+<config key="column_spec_25">
 <entry key="column_name" type="xstring" value="LHTransfer"/>
 <config key="element_names">
 <entry key="array-size" type="xint" value="0"/>
@@ -885,7 +907,7 @@
 </config>
 <config key="column_properties"/>
 </config>
-<config key="column_spec_24">
+<config key="column_spec_26">
 <entry key="column_name" type="xstring" value="RHTransfer"/>
 <config key="element_names">
 <entry key="array-size" type="xint" value="0"/>
@@ -912,7 +934,7 @@
 </config>
 <config key="column_properties"/>
 </config>
-<config key="column_spec_25">
+<config key="column_spec_27">
 <entry key="column_name" type="xstring" value="AdultChange"/>
 <config key="element_names">
 <entry key="array-size" type="xint" value="0"/>
@@ -951,7 +973,7 @@
 </config>
 <config key="column_properties"/>
 </config>
-<config key="column_spec_26">
+<config key="column_spec_28">
 <entry key="column_name" type="xstring" value="IsOpen"/>
 <config key="element_names">
 <entry key="array-size" type="xint" value="0"/>
@@ -984,7 +1006,7 @@
 </config>
 <config key="column_properties"/>
 </config>
-<config key="column_spec_27">
+<config key="column_spec_29">
 <entry key="column_name" type="xstring" value="OpeningHoursSchedule"/>
 <config key="element_names">
 <entry key="array-size" type="xint" value="0"/>
@@ -995,7 +1017,7 @@
 <config key="column_domain"/>
 <config key="column_properties"/>
 </config>
-<config key="column_spec_28">
+<config key="column_spec_30">
 <entry key="column_name" type="xstring" value="OpeningHoursNote"/>
 <config key="element_names">
 <entry key="array-size" type="xint" value="0"/>
@@ -1006,7 +1028,7 @@
 <config key="column_domain"/>
 <config key="column_properties"/>
 </config>
-<config key="column_spec_29">
+<config key="column_spec_31">
 <entry key="column_name" type="xstring" value="BabyChange"/>
 <config key="element_names">
 <entry key="array-size" type="xint" value="0"/>
@@ -1045,7 +1067,7 @@
 </config>
 <config key="column_properties"/>
 </config>
-<config key="column_spec_30">
+<config key="column_spec_32">
 <entry key="column_name" type="xstring" value="Showers"/>
 <config key="element_names">
 <entry key="array-size" type="xint" value="0"/>
@@ -1084,7 +1106,7 @@
 </config>
 <config key="column_properties"/>
 </config>
-<config key="column_spec_31">
+<config key="column_spec_33">
 <entry key="column_name" type="xstring" value="DrinkingWater"/>
 <config key="element_names">
 <entry key="array-size" type="xint" value="0"/>
@@ -1123,7 +1145,7 @@
 </config>
 <config key="column_properties"/>
 </config>
-<config key="column_spec_32">
+<config key="column_spec_34">
 <entry key="column_name" type="xstring" value="SharpsDisposal"/>
 <config key="element_names">
 <entry key="array-size" type="xint" value="0"/>
@@ -1162,7 +1184,7 @@
 </config>
 <config key="column_properties"/>
 </config>
-<config key="column_spec_33">
+<config key="column_spec_35">
 <entry key="column_name" type="xstring" value="SanitaryDisposal"/>
 <config key="element_names">
 <entry key="array-size" type="xint" value="0"/>
@@ -1201,7 +1223,7 @@
 </config>
 <config key="column_properties"/>
 </config>
-<config key="column_spec_34">
+<config key="column_spec_36">
 <entry key="column_name" type="xstring" value="IconURL"/>
 <config key="element_names">
 <entry key="array-size" type="xint" value="0"/>
@@ -1258,7 +1280,7 @@
 </config>
 <config key="column_properties"/>
 </config>
-<config key="column_spec_35">
+<config key="column_spec_37">
 <entry key="column_name" type="xstring" value="IconAltText"/>
 <config key="element_names">
 <entry key="array-size" type="xint" value="0"/>
@@ -1321,7 +1343,7 @@
 </config>
 <config key="column_properties"/>
 </config>
-<config key="column_spec_36">
+<config key="column_spec_38">
 <entry key="column_name" type="xstring" value="Notes"/>
 <config key="element_names">
 <entry key="array-size" type="xint" value="0"/>
@@ -1332,7 +1354,7 @@
 <config key="column_domain"/>
 <config key="column_properties"/>
 </config>
-<config key="column_spec_37">
+<config key="column_spec_39">
 <entry key="column_name" type="xstring" value="Status"/>
 <config key="element_names">
 <entry key="array-size" type="xint" value="0"/>
@@ -1359,7 +1381,7 @@
 </config>
 <config key="column_properties"/>
 </config>
-<config key="column_spec_38">
+<config key="column_spec_40">
 <entry key="column_name" type="xstring" value="Latitude"/>
 <config key="element_names">
 <entry key="array-size" type="xint" value="0"/>
@@ -1383,7 +1405,7 @@
 </config>
 <config key="column_properties"/>
 </config>
-<config key="column_spec_39">
+<config key="column_spec_41">
 <entry key="column_name" type="xstring" value="Longitude"/>
 <config key="element_names">
 <entry key="array-size" type="xint" value="0"/>
