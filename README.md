@@ -34,8 +34,8 @@ Casi todos los datos son de tipo booleano, pasamos a continuación a mostrar la 
 - Female *(boolean)*
 - Unisex *(boolean)*
 - DumpPoint *(boolean)*
-- FacilityType *(string)*
-- ToiletType  *(string)*
+- ~~FacilityType~~ *(string)*
+- ~~ToiletType~~  *(string)*
 - AccessLimited *(boolean)*
 - PaymentRequired *(boolean)*
 - KeyRequired *(boolean)*
@@ -49,10 +49,10 @@ Casi todos los datos son de tipo booleano, pasamos a continuación a mostrar la 
 - ~~MLAK~~ *(boolean)*
 - ParkingAccessible
 - ~~AccessibleParkingNote~~ *(string)*
-- Ambulant *(boolean)*
+- ~~Ambulant~~ *(boolean)*
 - ~~LHTransfer~~ *(boolean)*
 - ~~RHTransfer~~ *(boolean)*
-- AdultChange *(boolean)*
+- ~~AdultChange~~ *(boolean)*
 - IsOpen *(string)*
 - ~~OpeningHoursSchedule~~ *(string)*
 - ~~OpeningHoursNote~~ *(string)*
@@ -68,14 +68,53 @@ Casi todos los datos son de tipo booleano, pasamos a continuación a mostrar la 
 - Latitude *(double)*
 - Longitude *(double)*
 
-### Objetivos
+### Datos adicionales
 
-El objetivo principal es detectar la proximidad de los baños publicos a los principales nucleos de población, y si al estar mas próximos proveen mas servicios. Para poder saber dichos datos hemos tenido que hacer uso del problema del par de puntos mas cercanos: https://en.wikipedia.org/wiki/Closest_pair_of_points_problem así como extraer la lista de las principales ciudades de australia para calcular la distancia hacia estos.
+Para poder saber la proximidad de los baños publicos a los principales nucleos de població hemos tenido que hacer uso del problema del par de puntos mas cercanos: https://en.wikipedia.org/wiki/Closest_pair_of_points_problem así como extraer la lista de las principales ciudades de australia para calcular la distancia hacia estas.
 
 La lista de las principales ciudades de australia la hemos extraido de aquí: https://en.wikipedia.org/wiki/List_of_cities_in_Australia_by_population y de aquí: http://www.geonames.org/AU/largest-cities-in-australia.html
 
 !["Población"](images/population.png)
 
+Para calcular la distancia de cada baño publico hacia las principales ciudades se ha utilizado la *fórmula del haversine o semiverseneo* https://en.wikipedia.org/wiki/Haversine_formula que es una importante ecuación para la navegación astronómica, en cuanto al cálculo de la distancia de círculo máximo entre dos puntos de un globo sabiendo su longitud y su latitud.
+
+La formula dice que para cualquier par de puntos sobre una esfera:
+
+!["harvesine"](images/formula.png)
+
+donde:
+
+ - haversin es la función haversine, haversin ( θ ) = sen 2 ( θ /2) = (1-cos ( θ ))/2
+ - d es la distancia entre dos puntos (sobre un círculo máximo de la esfera, véase distancia esférica),
+ - R es el radio de la esfera, en este caso 6371 que es el radio en kilómetros de la tierra,
+ - φ 1 es la latitud del punto 1,
+ - φ 2 es la latitud del punto 2, y
+ - Δ λ es la diferencia de longitudes
+
+Se ha aplicado esa fórmula utilizando una hoja de cálculo para poder aplicarlo a cada W.C. público cruzandolo con los datos de las principales ciudades
+
+```
+=ACOS(COS(RADIANS(90-Latitude_1)) _COS(RADIANS(90-Latitude_2)) +SIN(RADIANS(90-Latitude1)) SIN(RADIANS(90-Latitude_2)) _COS(RADIANS(Longitude1-Longitude2)) * 6371
+```
+
+Una vez obtenidos estos datos adicionales se han agregado al dataset indicando tanto la mínima distancia como la máxima a cualquiera de las 10 principales ciudades de Australia con lo que tenemos las siguientes columnas adicionales:
+
+- Sidney *(integer)*
+- Melbourne *(integer)*
+- Brisbane *(integer)*
+- Perth *(integer)*
+- Adelaide *(integer)*
+- Gold Coast *(integer)*
+- Canberra *(integer)*
+- Newcastle *(integer)*
+- Wollongong *(integer)*
+- Logan City *(integer)*
+- distance_min *(integer)*
+- distance_max *(integer)*
+
+### Objetivos
+
+El objetivo principal es ver si hay mayor cantidad de urinarios públicos cerca de los nucleos urbanos, y si los servicios que ofrecen los mismos se ven incrementados por la proximidad.
 
 ## Minería de datos
 
@@ -91,32 +130,22 @@ Se ha agregado un nodo de estadísticas para ver una primera aproximación visua
 
 !["Estadísticas"](images/statistics_numeric.png)
 
-Para comprobar las observaciones realizadas mediante los histogramas pasamos a realizar una correlación lineal entre las variables con el objetivo de encontrar que las variables observadas tienen cierta correlación con el consumo de alcohol y además comprobar si hay algunas variables con una correlación muy alta lo que puede indicar que se derivan unas de otras y se pueden eliminar del dataset al aportar la misma información.
+Para comprobar las observaciones realizadas mediante los histogramas pasamos a realizar una correlación lineal entre las variables con el objetivo de encontrar que las variables observadas tienen cierta correlación con las distancias agregadas y además comprobar si hay algunas variables con una correlación muy alta lo que puede indicar que se derivan unas de otras y se pueden eliminar del dataset al aportar la misma información.
 
 !["Correlacion"](images/correlation.png)
 
-Como se puede apreciar existen muchas X en esta matriz lo que indica que no existe correlación entre las variables, esto se puede deber a que muchas variables son categóricas y es complicado realizar una correlación entre variables categóricas o entre una variable categórica y otra numérica al no saber cuales son los valores superiores o inferiores.
+Como se puede apreciar existen muchas X en esta matriz lo que indica que no existe correlación entre las variables, esto se puede deber a que muchas variables son booleanas y es complicado realizar una correlación entre variables booleanas o entre una variable booleana y otra numérica al no saber cuales son los valores superiores o inferiores.
+
 Las correlaciones más importantes que se observan son:
-● Correlación entre las notas de las evaluaciones (G1, G2 y G3).
-● Correlación entre la educación de los padres (Medu y Fedu).
-● Correlación negativa entre las notas y las asignaturas suspensas el año pasado (failures);
-positiva entre las notas, el tiempo de estudio (studytime); positiva entre las notas y la
-educación de los padres.
-● Correlación entre la vida social (gout) y el tiempo libre (freetime).
-● Correlación entre el consumo de alcohol y la vida social.
-Destaca esta última correlación que si se observa en un histograma la variable goout y el consumo de alcohol es prácticamente lineal, como se aprecia en la siguiente figura:
 
+ - Correlación entre Male y Female.
+ - Correlación entre AccesibleMale y AccessibleFemale.
+ - Correlación entre Status y IsOpen.
+ - Correlación negativa entre Unisex y Male/Female, igualmente hay una correlación negativa entre AccesibleUnisex y AccesibleMale/AccessibleFemale.
 
-## Elementos
+Una vez corregidos los datos hemos visualizado los distintos puntos en el mapa para hacernos una idea de la localización de los mismos, los distintos baños publicos aparecen en gris, y las principales ciudades aparecen marcadas en rojo.
 
-
-### Unidimensional
-
-### Bidimensional
-
-### Datos principales (PCA)
-
-
+!["Mapa"](images/map.png)
 
 ## Análisis descriptivo
 

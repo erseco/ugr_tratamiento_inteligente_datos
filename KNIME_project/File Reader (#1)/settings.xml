@@ -6,7 +6,7 @@
 <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
 </config>
 <config key="model">
-<entry key="DataURL" type="xstring" value="knime://LOCAL/ugr_tratamiento_inteligente_datos/latest-csv-export.csv"/>
+<entry key="DataURL" type="xstring" value="file:/Users/ernesto/master/TID/Practicas/ugr_tratamiento_inteligente_datos/toilet-database.csv"/>
 <config key="Delimiters">
 <config key="Delim0">
 <entry key="pattern" type="xstring" value="%%00010"/>
@@ -31,6 +31,7 @@
 <config key="Quote0">
 <entry key="left" type="xstring" value="&quot;"/>
 <entry key="right" type="xstring" value="&quot;"/>
+<entry key="EscChar" type="xchar" value="\"/>
 <entry key="DontRem" type="xboolean" value="false"/>
 </config>
 </config>
@@ -41,7 +42,7 @@
 </config>
 <entry key="CombineMultDelims" type="xboolean" value="false"/>
 <entry key="SkipFirstLines" type="xlong" value="0"/>
-<entry key="NewLineInQuotes" type="xboolean" value="true"/>
+<entry key="NewLineInQuotes" type="xboolean" value="false"/>
 <entry key="hasColHdr" type="xboolean" value="true"/>
 <entry key="hasRowHdr" type="xboolean" value="true"/>
 <entry key="ignoreEmptyLines" type="xboolean" value="true"/>
@@ -65,45 +66,9 @@
 <entry key="CharsetName" type="xstring" isnull="true" value=""/>
 <entry key="ConnectTimeoutInSeconds" type="xint" value="1"/>
 <entry key="delimsAtEOLuserVal" type="xboolean" value="false"/>
-<entry key="numOfColumns" type="xint" value="44"/>
+<entry key="numOfColumns" type="xint" value="36"/>
 <config key="ColumnProperties">
 <config key="0">
-<entry key="UserSetValues" type="xboolean" value="true"/>
-<entry key="MissValuePattern" type="xstring" value="?"/>
-<entry key="FormatParameter" type="xstring" isnull="true" value=""/>
-<entry key="ReadPossValsFromFile" type="xboolean" value="false"/>
-<entry key="SkipThisColumn" type="xboolean" value="true"/>
-<entry key="ColumnName" type="xstring" value="URL"/>
-<config key="ColumnClass">
-<entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
-<entry key="is_null" type="xboolean" value="false"/>
-</config>
-</config>
-<config key="1">
-<entry key="UserSetValues" type="xboolean" value="true"/>
-<entry key="MissValuePattern" type="xstring" value="?"/>
-<entry key="FormatParameter" type="xstring" isnull="true" value=""/>
-<entry key="ReadPossValsFromFile" type="xboolean" value="false"/>
-<entry key="SkipThisColumn" type="xboolean" value="false"/>
-<entry key="ColumnName" type="xstring" value="Name"/>
-<config key="ColumnClass">
-<entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
-<entry key="is_null" type="xboolean" value="false"/>
-</config>
-</config>
-<config key="2">
-<entry key="UserSetValues" type="xboolean" value="true"/>
-<entry key="MissValuePattern" type="xstring" value="?"/>
-<entry key="FormatParameter" type="xstring" isnull="true" value=""/>
-<entry key="ReadPossValsFromFile" type="xboolean" value="false"/>
-<entry key="SkipThisColumn" type="xboolean" value="false"/>
-<entry key="ColumnName" type="xstring" value="Address1"/>
-<config key="ColumnClass">
-<entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
-<entry key="is_null" type="xboolean" value="false"/>
-</config>
-</config>
-<config key="3">
 <entry key="UserSetValues" type="xboolean" value="false"/>
 <entry key="MissValuePattern" type="xstring" value="?"/>
 <entry key="FormatParameter" type="xstring" isnull="true" value=""/>
@@ -115,7 +80,7 @@
 <entry key="is_null" type="xboolean" value="false"/>
 </config>
 </config>
-<config key="4">
+<config key="1">
 <entry key="UserSetValues" type="xboolean" value="false"/>
 <entry key="MissValuePattern" type="xstring" value="?"/>
 <entry key="FormatParameter" type="xstring" isnull="true" value=""/>
@@ -127,31 +92,19 @@
 <entry key="is_null" type="xboolean" value="false"/>
 </config>
 </config>
-<config key="5">
-<entry key="UserSetValues" type="xboolean" value="false"/>
+<config key="2">
+<entry key="UserSetValues" type="xboolean" value="true"/>
 <entry key="MissValuePattern" type="xstring" isnull="true" value=""/>
 <entry key="FormatParameter" type="xstring" isnull="true" value=""/>
 <entry key="ReadPossValsFromFile" type="xboolean" value="false"/>
 <entry key="SkipThisColumn" type="xboolean" value="false"/>
 <entry key="ColumnName" type="xstring" value="Postcode"/>
 <config key="ColumnClass">
-<entry key="cell_class" type="xstring" value="org.knime.core.data.def.IntCell"/>
-<entry key="is_null" type="xboolean" value="false"/>
-</config>
-</config>
-<config key="6">
-<entry key="UserSetValues" type="xboolean" value="true"/>
-<entry key="MissValuePattern" type="xstring" value="?"/>
-<entry key="FormatParameter" type="xstring" isnull="true" value=""/>
-<entry key="ReadPossValsFromFile" type="xboolean" value="false"/>
-<entry key="SkipThisColumn" type="xboolean" value="true"/>
-<entry key="ColumnName" type="xstring" value="AddressNote"/>
-<config key="ColumnClass">
 <entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
 <entry key="is_null" type="xboolean" value="false"/>
 </config>
 </config>
-<config key="7">
+<config key="3">
 <entry key="UserSetValues" type="xboolean" value="true"/>
 <entry key="MissValuePattern" type="xstring" value="?"/>
 <entry key="FormatParameter" type="xstring" isnull="true" value=""/>
@@ -163,7 +116,7 @@
 <entry key="is_null" type="xboolean" value="false"/>
 </config>
 </config>
-<config key="8">
+<config key="4">
 <entry key="UserSetValues" type="xboolean" value="true"/>
 <entry key="MissValuePattern" type="xstring" value="?"/>
 <entry key="FormatParameter" type="xstring" isnull="true" value=""/>
@@ -175,7 +128,7 @@
 <entry key="is_null" type="xboolean" value="false"/>
 </config>
 </config>
-<config key="9">
+<config key="5">
 <entry key="UserSetValues" type="xboolean" value="true"/>
 <entry key="MissValuePattern" type="xstring" value="?"/>
 <entry key="FormatParameter" type="xstring" isnull="true" value=""/>
@@ -187,7 +140,7 @@
 <entry key="is_null" type="xboolean" value="false"/>
 </config>
 </config>
-<config key="10">
+<config key="6">
 <entry key="UserSetValues" type="xboolean" value="true"/>
 <entry key="MissValuePattern" type="xstring" value="?"/>
 <entry key="FormatParameter" type="xstring" isnull="true" value=""/>
@@ -199,31 +152,7 @@
 <entry key="is_null" type="xboolean" value="false"/>
 </config>
 </config>
-<config key="11">
-<entry key="UserSetValues" type="xboolean" value="false"/>
-<entry key="MissValuePattern" type="xstring" value="?"/>
-<entry key="FormatParameter" type="xstring" isnull="true" value=""/>
-<entry key="ReadPossValsFromFile" type="xboolean" value="false"/>
-<entry key="SkipThisColumn" type="xboolean" value="false"/>
-<entry key="ColumnName" type="xstring" value="FacilityType"/>
-<config key="ColumnClass">
-<entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
-<entry key="is_null" type="xboolean" value="false"/>
-</config>
-</config>
-<config key="12">
-<entry key="UserSetValues" type="xboolean" value="false"/>
-<entry key="MissValuePattern" type="xstring" value="?"/>
-<entry key="FormatParameter" type="xstring" isnull="true" value=""/>
-<entry key="ReadPossValsFromFile" type="xboolean" value="false"/>
-<entry key="SkipThisColumn" type="xboolean" value="false"/>
-<entry key="ColumnName" type="xstring" value="ToiletType"/>
-<config key="ColumnClass">
-<entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
-<entry key="is_null" type="xboolean" value="false"/>
-</config>
-</config>
-<config key="13">
+<config key="7">
 <entry key="UserSetValues" type="xboolean" value="true"/>
 <entry key="MissValuePattern" type="xstring" value="?"/>
 <entry key="FormatParameter" type="xstring" isnull="true" value=""/>
@@ -235,7 +164,7 @@
 <entry key="is_null" type="xboolean" value="false"/>
 </config>
 </config>
-<config key="14">
+<config key="8">
 <entry key="UserSetValues" type="xboolean" value="true"/>
 <entry key="MissValuePattern" type="xstring" value="?"/>
 <entry key="FormatParameter" type="xstring" isnull="true" value=""/>
@@ -247,7 +176,7 @@
 <entry key="is_null" type="xboolean" value="false"/>
 </config>
 </config>
-<config key="15">
+<config key="9">
 <entry key="UserSetValues" type="xboolean" value="true"/>
 <entry key="MissValuePattern" type="xstring" value="?"/>
 <entry key="FormatParameter" type="xstring" isnull="true" value=""/>
@@ -259,19 +188,7 @@
 <entry key="is_null" type="xboolean" value="false"/>
 </config>
 </config>
-<config key="16">
-<entry key="UserSetValues" type="xboolean" value="false"/>
-<entry key="MissValuePattern" type="xstring" value="?"/>
-<entry key="FormatParameter" type="xstring" isnull="true" value=""/>
-<entry key="ReadPossValsFromFile" type="xboolean" value="false"/>
-<entry key="SkipThisColumn" type="xboolean" value="false"/>
-<entry key="ColumnName" type="xstring" value="AccessNote"/>
-<config key="ColumnClass">
-<entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
-<entry key="is_null" type="xboolean" value="false"/>
-</config>
-</config>
-<config key="17">
+<config key="10">
 <entry key="UserSetValues" type="xboolean" value="true"/>
 <entry key="MissValuePattern" type="xstring" value="?"/>
 <entry key="FormatParameter" type="xstring" isnull="true" value=""/>
@@ -283,19 +200,7 @@
 <entry key="is_null" type="xboolean" value="false"/>
 </config>
 </config>
-<config key="18">
-<entry key="UserSetValues" type="xboolean" value="false"/>
-<entry key="MissValuePattern" type="xstring" value="?"/>
-<entry key="FormatParameter" type="xstring" isnull="true" value=""/>
-<entry key="ReadPossValsFromFile" type="xboolean" value="false"/>
-<entry key="SkipThisColumn" type="xboolean" value="false"/>
-<entry key="ColumnName" type="xstring" value="ParkingNote"/>
-<config key="ColumnClass">
-<entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
-<entry key="is_null" type="xboolean" value="false"/>
-</config>
-</config>
-<config key="19">
+<config key="11">
 <entry key="UserSetValues" type="xboolean" value="true"/>
 <entry key="MissValuePattern" type="xstring" value="?"/>
 <entry key="FormatParameter" type="xstring" isnull="true" value=""/>
@@ -307,7 +212,7 @@
 <entry key="is_null" type="xboolean" value="false"/>
 </config>
 </config>
-<config key="20">
+<config key="12">
 <entry key="UserSetValues" type="xboolean" value="true"/>
 <entry key="MissValuePattern" type="xstring" value="?"/>
 <entry key="FormatParameter" type="xstring" isnull="true" value=""/>
@@ -319,7 +224,7 @@
 <entry key="is_null" type="xboolean" value="false"/>
 </config>
 </config>
-<config key="21">
+<config key="13">
 <entry key="UserSetValues" type="xboolean" value="true"/>
 <entry key="MissValuePattern" type="xstring" value="?"/>
 <entry key="FormatParameter" type="xstring" isnull="true" value=""/>
@@ -331,31 +236,7 @@
 <entry key="is_null" type="xboolean" value="false"/>
 </config>
 </config>
-<config key="22">
-<entry key="UserSetValues" type="xboolean" value="false"/>
-<entry key="MissValuePattern" type="xstring" value="?"/>
-<entry key="FormatParameter" type="xstring" isnull="true" value=""/>
-<entry key="ReadPossValsFromFile" type="xboolean" value="false"/>
-<entry key="SkipThisColumn" type="xboolean" value="false"/>
-<entry key="ColumnName" type="xstring" value="AccessibleNote"/>
-<config key="ColumnClass">
-<entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
-<entry key="is_null" type="xboolean" value="false"/>
-</config>
-</config>
-<config key="23">
-<entry key="UserSetValues" type="xboolean" value="true"/>
-<entry key="MissValuePattern" type="xstring" value="?"/>
-<entry key="FormatParameter" type="xstring" isnull="true" value=""/>
-<entry key="ReadPossValsFromFile" type="xboolean" value="false"/>
-<entry key="SkipThisColumn" type="xboolean" value="false"/>
-<entry key="ColumnName" type="xstring" value="MLAK"/>
-<config key="ColumnClass">
-<entry key="cell_class" type="xstring" value="org.knime.core.data.def.BooleanCell"/>
-<entry key="is_null" type="xboolean" value="false"/>
-</config>
-</config>
-<config key="24">
+<config key="14">
 <entry key="UserSetValues" type="xboolean" value="true"/>
 <entry key="MissValuePattern" type="xstring" value="?"/>
 <entry key="FormatParameter" type="xstring" isnull="true" value=""/>
@@ -367,67 +248,7 @@
 <entry key="is_null" type="xboolean" value="false"/>
 </config>
 </config>
-<config key="25">
-<entry key="UserSetValues" type="xboolean" value="false"/>
-<entry key="MissValuePattern" type="xstring" value="?"/>
-<entry key="FormatParameter" type="xstring" isnull="true" value=""/>
-<entry key="ReadPossValsFromFile" type="xboolean" value="false"/>
-<entry key="SkipThisColumn" type="xboolean" value="false"/>
-<entry key="ColumnName" type="xstring" value="AccessibleParkingNote"/>
-<config key="ColumnClass">
-<entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
-<entry key="is_null" type="xboolean" value="false"/>
-</config>
-</config>
-<config key="26">
-<entry key="UserSetValues" type="xboolean" value="true"/>
-<entry key="MissValuePattern" type="xstring" value="?"/>
-<entry key="FormatParameter" type="xstring" isnull="true" value=""/>
-<entry key="ReadPossValsFromFile" type="xboolean" value="false"/>
-<entry key="SkipThisColumn" type="xboolean" value="false"/>
-<entry key="ColumnName" type="xstring" value="Ambulant"/>
-<config key="ColumnClass">
-<entry key="cell_class" type="xstring" value="org.knime.core.data.def.BooleanCell"/>
-<entry key="is_null" type="xboolean" value="false"/>
-</config>
-</config>
-<config key="27">
-<entry key="UserSetValues" type="xboolean" value="true"/>
-<entry key="MissValuePattern" type="xstring" value="?"/>
-<entry key="FormatParameter" type="xstring" isnull="true" value=""/>
-<entry key="ReadPossValsFromFile" type="xboolean" value="false"/>
-<entry key="SkipThisColumn" type="xboolean" value="false"/>
-<entry key="ColumnName" type="xstring" value="LHTransfer"/>
-<config key="ColumnClass">
-<entry key="cell_class" type="xstring" value="org.knime.core.data.def.BooleanCell"/>
-<entry key="is_null" type="xboolean" value="false"/>
-</config>
-</config>
-<config key="28">
-<entry key="UserSetValues" type="xboolean" value="false"/>
-<entry key="MissValuePattern" type="xstring" value="?"/>
-<entry key="FormatParameter" type="xstring" isnull="true" value=""/>
-<entry key="ReadPossValsFromFile" type="xboolean" value="false"/>
-<entry key="SkipThisColumn" type="xboolean" value="false"/>
-<entry key="ColumnName" type="xstring" value="RHTransfer"/>
-<config key="ColumnClass">
-<entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
-<entry key="is_null" type="xboolean" value="false"/>
-</config>
-</config>
-<config key="29">
-<entry key="UserSetValues" type="xboolean" value="true"/>
-<entry key="MissValuePattern" type="xstring" value="?"/>
-<entry key="FormatParameter" type="xstring" isnull="true" value=""/>
-<entry key="ReadPossValsFromFile" type="xboolean" value="false"/>
-<entry key="SkipThisColumn" type="xboolean" value="false"/>
-<entry key="ColumnName" type="xstring" value="AdultChange"/>
-<config key="ColumnClass">
-<entry key="cell_class" type="xstring" value="org.knime.core.data.def.BooleanCell"/>
-<entry key="is_null" type="xboolean" value="false"/>
-</config>
-</config>
-<config key="30">
+<config key="15">
 <entry key="UserSetValues" type="xboolean" value="false"/>
 <entry key="MissValuePattern" type="xstring" value="?"/>
 <entry key="FormatParameter" type="xstring" isnull="true" value=""/>
@@ -439,31 +260,7 @@
 <entry key="is_null" type="xboolean" value="false"/>
 </config>
 </config>
-<config key="31">
-<entry key="UserSetValues" type="xboolean" value="false"/>
-<entry key="MissValuePattern" type="xstring" value="?"/>
-<entry key="FormatParameter" type="xstring" isnull="true" value=""/>
-<entry key="ReadPossValsFromFile" type="xboolean" value="false"/>
-<entry key="SkipThisColumn" type="xboolean" value="false"/>
-<entry key="ColumnName" type="xstring" value="OpeningHoursSchedule"/>
-<config key="ColumnClass">
-<entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
-<entry key="is_null" type="xboolean" value="false"/>
-</config>
-</config>
-<config key="32">
-<entry key="UserSetValues" type="xboolean" value="false"/>
-<entry key="MissValuePattern" type="xstring" value="?"/>
-<entry key="FormatParameter" type="xstring" isnull="true" value=""/>
-<entry key="ReadPossValsFromFile" type="xboolean" value="false"/>
-<entry key="SkipThisColumn" type="xboolean" value="false"/>
-<entry key="ColumnName" type="xstring" value="OpeningHoursNote"/>
-<config key="ColumnClass">
-<entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
-<entry key="is_null" type="xboolean" value="false"/>
-</config>
-</config>
-<config key="33">
+<config key="16">
 <entry key="UserSetValues" type="xboolean" value="true"/>
 <entry key="MissValuePattern" type="xstring" value="?"/>
 <entry key="FormatParameter" type="xstring" isnull="true" value=""/>
@@ -475,7 +272,7 @@
 <entry key="is_null" type="xboolean" value="false"/>
 </config>
 </config>
-<config key="34">
+<config key="17">
 <entry key="UserSetValues" type="xboolean" value="true"/>
 <entry key="MissValuePattern" type="xstring" value="?"/>
 <entry key="FormatParameter" type="xstring" isnull="true" value=""/>
@@ -487,7 +284,7 @@
 <entry key="is_null" type="xboolean" value="false"/>
 </config>
 </config>
-<config key="35">
+<config key="18">
 <entry key="UserSetValues" type="xboolean" value="true"/>
 <entry key="MissValuePattern" type="xstring" value="?"/>
 <entry key="FormatParameter" type="xstring" isnull="true" value=""/>
@@ -499,7 +296,7 @@
 <entry key="is_null" type="xboolean" value="false"/>
 </config>
 </config>
-<config key="36">
+<config key="19">
 <entry key="UserSetValues" type="xboolean" value="true"/>
 <entry key="MissValuePattern" type="xstring" value="?"/>
 <entry key="FormatParameter" type="xstring" isnull="true" value=""/>
@@ -511,7 +308,7 @@
 <entry key="is_null" type="xboolean" value="false"/>
 </config>
 </config>
-<config key="37">
+<config key="20">
 <entry key="UserSetValues" type="xboolean" value="true"/>
 <entry key="MissValuePattern" type="xstring" value="?"/>
 <entry key="FormatParameter" type="xstring" isnull="true" value=""/>
@@ -523,43 +320,7 @@
 <entry key="is_null" type="xboolean" value="false"/>
 </config>
 </config>
-<config key="38">
-<entry key="UserSetValues" type="xboolean" value="false"/>
-<entry key="MissValuePattern" type="xstring" value="?"/>
-<entry key="FormatParameter" type="xstring" isnull="true" value=""/>
-<entry key="ReadPossValsFromFile" type="xboolean" value="false"/>
-<entry key="SkipThisColumn" type="xboolean" value="false"/>
-<entry key="ColumnName" type="xstring" value="IconURL"/>
-<config key="ColumnClass">
-<entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
-<entry key="is_null" type="xboolean" value="false"/>
-</config>
-</config>
-<config key="39">
-<entry key="UserSetValues" type="xboolean" value="false"/>
-<entry key="MissValuePattern" type="xstring" value="?"/>
-<entry key="FormatParameter" type="xstring" isnull="true" value=""/>
-<entry key="ReadPossValsFromFile" type="xboolean" value="false"/>
-<entry key="SkipThisColumn" type="xboolean" value="false"/>
-<entry key="ColumnName" type="xstring" value="IconAltText"/>
-<config key="ColumnClass">
-<entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
-<entry key="is_null" type="xboolean" value="false"/>
-</config>
-</config>
-<config key="40">
-<entry key="UserSetValues" type="xboolean" value="false"/>
-<entry key="MissValuePattern" type="xstring" value="?"/>
-<entry key="FormatParameter" type="xstring" isnull="true" value=""/>
-<entry key="ReadPossValsFromFile" type="xboolean" value="false"/>
-<entry key="SkipThisColumn" type="xboolean" value="false"/>
-<entry key="ColumnName" type="xstring" value="Notes"/>
-<config key="ColumnClass">
-<entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
-<entry key="is_null" type="xboolean" value="false"/>
-</config>
-</config>
-<config key="41">
+<config key="21">
 <entry key="UserSetValues" type="xboolean" value="false"/>
 <entry key="MissValuePattern" type="xstring" value="?"/>
 <entry key="FormatParameter" type="xstring" isnull="true" value=""/>
@@ -571,7 +332,7 @@
 <entry key="is_null" type="xboolean" value="false"/>
 </config>
 </config>
-<config key="42">
+<config key="22">
 <entry key="UserSetValues" type="xboolean" value="false"/>
 <entry key="MissValuePattern" type="xstring" isnull="true" value=""/>
 <entry key="FormatParameter" type="xstring" isnull="true" value=""/>
@@ -583,8 +344,8 @@
 <entry key="is_null" type="xboolean" value="false"/>
 </config>
 </config>
-<config key="43">
-<entry key="UserSetValues" type="xboolean" value="true"/>
+<config key="23">
+<entry key="UserSetValues" type="xboolean" value="false"/>
 <entry key="MissValuePattern" type="xstring" isnull="true" value=""/>
 <entry key="FormatParameter" type="xstring" isnull="true" value=""/>
 <entry key="ReadPossValsFromFile" type="xboolean" value="false"/>
@@ -595,10 +356,154 @@
 <entry key="is_null" type="xboolean" value="false"/>
 </config>
 </config>
+<config key="24">
+<entry key="UserSetValues" type="xboolean" value="false"/>
+<entry key="MissValuePattern" type="xstring" isnull="true" value=""/>
+<entry key="FormatParameter" type="xstring" isnull="true" value=""/>
+<entry key="ReadPossValsFromFile" type="xboolean" value="false"/>
+<entry key="SkipThisColumn" type="xboolean" value="false"/>
+<entry key="ColumnName" type="xstring" value="Sidney"/>
+<config key="ColumnClass">
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.IntCell"/>
+<entry key="is_null" type="xboolean" value="false"/>
+</config>
+</config>
+<config key="25">
+<entry key="UserSetValues" type="xboolean" value="false"/>
+<entry key="MissValuePattern" type="xstring" isnull="true" value=""/>
+<entry key="FormatParameter" type="xstring" isnull="true" value=""/>
+<entry key="ReadPossValsFromFile" type="xboolean" value="false"/>
+<entry key="SkipThisColumn" type="xboolean" value="false"/>
+<entry key="ColumnName" type="xstring" value="Melbourne"/>
+<config key="ColumnClass">
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.IntCell"/>
+<entry key="is_null" type="xboolean" value="false"/>
+</config>
+</config>
+<config key="26">
+<entry key="UserSetValues" type="xboolean" value="false"/>
+<entry key="MissValuePattern" type="xstring" isnull="true" value=""/>
+<entry key="FormatParameter" type="xstring" isnull="true" value=""/>
+<entry key="ReadPossValsFromFile" type="xboolean" value="false"/>
+<entry key="SkipThisColumn" type="xboolean" value="false"/>
+<entry key="ColumnName" type="xstring" value="Brisbane"/>
+<config key="ColumnClass">
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.IntCell"/>
+<entry key="is_null" type="xboolean" value="false"/>
+</config>
+</config>
+<config key="27">
+<entry key="UserSetValues" type="xboolean" value="false"/>
+<entry key="MissValuePattern" type="xstring" isnull="true" value=""/>
+<entry key="FormatParameter" type="xstring" isnull="true" value=""/>
+<entry key="ReadPossValsFromFile" type="xboolean" value="false"/>
+<entry key="SkipThisColumn" type="xboolean" value="false"/>
+<entry key="ColumnName" type="xstring" value="Perth"/>
+<config key="ColumnClass">
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.IntCell"/>
+<entry key="is_null" type="xboolean" value="false"/>
+</config>
+</config>
+<config key="28">
+<entry key="UserSetValues" type="xboolean" value="false"/>
+<entry key="MissValuePattern" type="xstring" isnull="true" value=""/>
+<entry key="FormatParameter" type="xstring" isnull="true" value=""/>
+<entry key="ReadPossValsFromFile" type="xboolean" value="false"/>
+<entry key="SkipThisColumn" type="xboolean" value="false"/>
+<entry key="ColumnName" type="xstring" value="Adelaide"/>
+<config key="ColumnClass">
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.IntCell"/>
+<entry key="is_null" type="xboolean" value="false"/>
+</config>
+</config>
+<config key="29">
+<entry key="UserSetValues" type="xboolean" value="false"/>
+<entry key="MissValuePattern" type="xstring" isnull="true" value=""/>
+<entry key="FormatParameter" type="xstring" isnull="true" value=""/>
+<entry key="ReadPossValsFromFile" type="xboolean" value="false"/>
+<entry key="SkipThisColumn" type="xboolean" value="false"/>
+<entry key="ColumnName" type="xstring" value="Gold Coast"/>
+<config key="ColumnClass">
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.IntCell"/>
+<entry key="is_null" type="xboolean" value="false"/>
+</config>
+</config>
+<config key="30">
+<entry key="UserSetValues" type="xboolean" value="false"/>
+<entry key="MissValuePattern" type="xstring" isnull="true" value=""/>
+<entry key="FormatParameter" type="xstring" isnull="true" value=""/>
+<entry key="ReadPossValsFromFile" type="xboolean" value="false"/>
+<entry key="SkipThisColumn" type="xboolean" value="false"/>
+<entry key="ColumnName" type="xstring" value="Canberra"/>
+<config key="ColumnClass">
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.IntCell"/>
+<entry key="is_null" type="xboolean" value="false"/>
+</config>
+</config>
+<config key="31">
+<entry key="UserSetValues" type="xboolean" value="false"/>
+<entry key="MissValuePattern" type="xstring" isnull="true" value=""/>
+<entry key="FormatParameter" type="xstring" isnull="true" value=""/>
+<entry key="ReadPossValsFromFile" type="xboolean" value="false"/>
+<entry key="SkipThisColumn" type="xboolean" value="false"/>
+<entry key="ColumnName" type="xstring" value="Newcastle"/>
+<config key="ColumnClass">
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.IntCell"/>
+<entry key="is_null" type="xboolean" value="false"/>
+</config>
+</config>
+<config key="32">
+<entry key="UserSetValues" type="xboolean" value="false"/>
+<entry key="MissValuePattern" type="xstring" isnull="true" value=""/>
+<entry key="FormatParameter" type="xstring" isnull="true" value=""/>
+<entry key="ReadPossValsFromFile" type="xboolean" value="false"/>
+<entry key="SkipThisColumn" type="xboolean" value="false"/>
+<entry key="ColumnName" type="xstring" value="Wollongong"/>
+<config key="ColumnClass">
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.IntCell"/>
+<entry key="is_null" type="xboolean" value="false"/>
+</config>
+</config>
+<config key="33">
+<entry key="UserSetValues" type="xboolean" value="false"/>
+<entry key="MissValuePattern" type="xstring" isnull="true" value=""/>
+<entry key="FormatParameter" type="xstring" isnull="true" value=""/>
+<entry key="ReadPossValsFromFile" type="xboolean" value="false"/>
+<entry key="SkipThisColumn" type="xboolean" value="false"/>
+<entry key="ColumnName" type="xstring" value="Logan City"/>
+<config key="ColumnClass">
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.IntCell"/>
+<entry key="is_null" type="xboolean" value="false"/>
+</config>
+</config>
+<config key="34">
+<entry key="UserSetValues" type="xboolean" value="false"/>
+<entry key="MissValuePattern" type="xstring" isnull="true" value=""/>
+<entry key="FormatParameter" type="xstring" isnull="true" value=""/>
+<entry key="ReadPossValsFromFile" type="xboolean" value="false"/>
+<entry key="SkipThisColumn" type="xboolean" value="false"/>
+<entry key="ColumnName" type="xstring" value="distance_min"/>
+<config key="ColumnClass">
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.IntCell"/>
+<entry key="is_null" type="xboolean" value="false"/>
+</config>
+</config>
+<config key="35">
+<entry key="UserSetValues" type="xboolean" value="false"/>
+<entry key="MissValuePattern" type="xstring" isnull="true" value=""/>
+<entry key="FormatParameter" type="xstring" isnull="true" value=""/>
+<entry key="ReadPossValsFromFile" type="xboolean" value="false"/>
+<entry key="SkipThisColumn" type="xboolean" value="false"/>
+<entry key="ColumnName" type="xstring" value="distance_max"/>
+<config key="ColumnClass">
+<entry key="cell_class" type="xstring" value="org.knime.core.data.def.IntCell"/>
+<entry key="is_null" type="xboolean" value="false"/>
+</config>
+</config>
 </config>
 </config>
 <entry key="customDescription" type="xstring" isnull="true" value=""/>
-<entry key="state" type="xstring" value="EXECUTED"/>
+<entry key="state" type="xstring" value="CONFIGURED"/>
 <entry key="factory" type="xstring" value="org.knime.base.node.io.filereader.FileReaderNodeFactory"/>
 <entry key="node-name" type="xstring" value="File Reader"/>
 <entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
@@ -611,19 +516,16 @@
 <entry key="node-feature-version" type="xstring" value="3.4.1.v201709070950"/>
 <config key="factory_settings"/>
 <entry key="name" type="xstring" value="File Reader"/>
-<entry key="hasContent" type="xboolean" value="true"/>
+<entry key="hasContent" type="xboolean" value="false"/>
 <entry key="isInactive" type="xboolean" value="false"/>
 <config key="ports">
 <config key="port_1">
 <entry key="index" type="xint" value="1"/>
-<entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
-<entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
-<entry key="port_object_summary" type="xstring" value="Rows: 18865, Cols: 42"/>
-<entry key="port_dir_location" type="xstring" value="port_1"/>
+<entry key="port_dir_location" type="xstring" isnull="true" value=""/>
 </config>
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="0892db04-5ebd-4b8b-a6a3-588eb1829ad7"/>
+<entry key="file_store_id" type="xstring" isnull="true" value=""/>
 </config>
 </config>
