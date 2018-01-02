@@ -147,7 +147,7 @@ Una vez corregidos los datos hemos visualizado los distintos puntos en el mapa p
 
 !["Mapa"](images/map.png)
 
-## Análisis descriptivo
+## Análisis descriptivo
 
 ### Clustering
 
