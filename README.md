@@ -20,16 +20,16 @@ El *dataset* escogido contiene las estadísticas de los 17.000 baños públicos 
 8. additional features (e.g. showers, baby change facilities etc).
 9. notes (e.g. coin operated showers etc).
 
-Todos los datos son números enteros a excepción del nombre del jugador, el equipo y la posición que son cadenas de caracteres.
+Casi todos los datos son de tipo booleano, pasamos a continuación a mostrar la lista completa de los campos indicando los que hemos omitido así como los distintos tipos de datos que hemos extraido de ellos.
 
 - ToiletID *(integer)*
-- URL *(string)*
-- ~~Name *(omitido)*~~
-- ~~Address1 *(omitido)*~~
+- ~~URL~~ *(string)*
+- ~~Name~~ *(string)*
+- ~~Address1~~ *(string)*
 - Town *(string)*
 - State *(string)*
 - Postcode *(integer)*
-- ~~AddressNote *(omitido)*~~
+- ~~AddressNote~~ *(string)*
 - Male *(boolean)*
 - Female *(boolean)*
 - Unisex *(boolean)*
@@ -39,31 +39,31 @@ Todos los datos son números enteros a excepción del nombre del jugador, el equ
 - AccessLimited *(boolean)*
 - PaymentRequired *(boolean)*
 - KeyRequired *(boolean)*
-- AccessNote *(omitido)*
+- ~~AccessNote~~ *(string)*
 - Parking *(boolean)*
-- ParkingNote *(omitido)*
+- ~~ParkingNote~~ *(string)*
 - AccessibleMale *(boolean)*
 - AccessibleFemale *(boolean)*
 - AccessibleUnisex *(boolean)*
 - AccessibleNote *(boolean)*
-- MLAK *(omitido)*
+- ~~MLAK~~ *(boolean)*
 - ParkingAccessible
-- AccessibleParkingNote *(omitido)*
+- ~~AccessibleParkingNote~~ *(string)*
 - Ambulant *(boolean)*
-- LHTransfer *(omitido)*
-- RHTransfer *(omitido)*
+- ~~LHTransfer~~ *(boolean)*
+- ~~RHTransfer~~ *(boolean)*
 - AdultChange *(boolean)*
-- IsOpen *(list)*
-- OpeningHoursSchedule *(omitido)*
-- OpeningHoursNote *(omitido)*
+- IsOpen *(string)*
+- ~~OpeningHoursSchedule~~ *(string)*
+- ~~OpeningHoursNote~~ *(string)*
 - BabyChange *(boolean)*
 - Showers *(boolean)*
 - DrinkingWater *(boolean)*
 - SharpsDisposal *(boolean)*
 - SanitaryDisposal *(boolean)*
-- IconURL *(omitido)*
-- IconAltText *(omitido)*
-- Notes *(omitido)*
+- ~~IconURL~~ *(string)*
+- ~~IconAltText~~ *(string)*
+- ~~Notes~~ *(string)*
 - Status *(string)*
 - Latitude *(double)*
 - Longitude *(double)*
