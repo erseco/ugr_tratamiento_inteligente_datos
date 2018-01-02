@@ -68,6 +68,9 @@ Casi todos los datos son de tipo booleano, pasamos a continuación a mostrar la 
 - Latitude *(double)*
 - Longitude *(double)*
 
+### Objectivos
+
+El objetivo es.... **TODO**
 
 ## Minería de datos
 
@@ -82,13 +85,38 @@ Lo primero de todo hemos agregado un nodo *FileReader* que hemos configurado par
 Se ha agregado un nodo de estadísticas para ver una primera aproximación visual de los datos que tenemos.
 
 
-Agrupamiento
+
+## Elementos
+
+### Unidimensional
+
+### Bidimensional
+
+### Datos principales (PCA)
 
 
-Clasificación
 
 
-Regresión
+## Análisis descriptivo
+
+### Clustering
+
+### Medidas de bondad
+
+### Interpretacion
+
+
+
+
+## Análisis predictivo
+
+### Clasificando
+
+### Regresión
+
+### Asociacion
+
+## Conclusiones.
 
 
 
