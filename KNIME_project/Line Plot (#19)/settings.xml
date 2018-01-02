@@ -18,10 +18,10 @@
 <entry key="max_nominal_values" type="xint" value="60"/>
 </config>
 <entry key="customDescription" type="xstring" isnull="true" value=""/>
-<entry key="state" type="xstring" value="IDLE"/>
+<entry key="state" type="xstring" value="CONFIGURED"/>
 <config key="nodecontainer_message">
 <entry key="type" type="xstring" value="WARNING"/>
-<entry key="message" type="xstring" value="No columns to visualize are available! Please refer to the NodeDescription to find out why!"/>
+<entry key="message" type="xstring" value="Some columns are ignored: too many/missing nominal values and bounds missing."/>
 </config>
 <entry key="factory" type="xstring" value="org.knime.base.node.viz.plotter.line.LinePlotterNodeFactory"/>
 <entry key="node-name" type="xstring" value="Line Plot"/>
