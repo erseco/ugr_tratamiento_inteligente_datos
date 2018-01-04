@@ -171,7 +171,7 @@ Las correlaciones más importantes que se observan son:
  - Correlación entre Male y Female.
  - Correlación entre AccesibleMale y AccessibleFemale.
  - Correlación entre Status y IsOpen.
- - Correlación negativa entre Unisex y Male/Female, igualmente hay una correlación negativa entre AccesibleUnisex y AccesibleMale/AccessibleFemale.
+ - Correlación negativa entre Unisex y Male/Female.
 
 Una vez corregidos los datos hemos visualizado los distintos puntos en el mapa para hacernos una idea de la localización de los mismos, los distintos baños publicos aparecen en gris, y las principales ciudades aparecen marcadas en rojo.
 
