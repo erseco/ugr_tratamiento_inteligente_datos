@@ -191,9 +191,11 @@ Otro dato curioso es la poca cantidad de baños que cuentan con un cambiador de 
 
 !["Agua potable (por estados)"](images/map_states_drinkablewater.png)
 
-Tambien podemos ver
+Tambien podemos ver como la representación de las variables es uniforme a lo largo de todo el país en el histograma siguiente:
 
-!["Agua potable (por estados)"](images/histogram_states.png)
+!["Histograma por estados"](images/histogram_states.png)
+
+Para el mismo se han usado las columnas Male, Female, DrinkingWater y SharpsDisposal.
 
 ##  Análisis descriptivo
 
