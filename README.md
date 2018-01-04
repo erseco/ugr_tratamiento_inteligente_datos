@@ -191,6 +191,9 @@ Otro dato curioso es la poca cantidad de baños que cuentan con un cambiador de 
 
 !["Agua potable (por estados)"](images/map_states_drinkablewater.png)
 
+Tambien podemos ver
+
+!["Agua potable (por estados)"](images/histogram_states.png)
 
 ##  Análisis descriptivo
 
