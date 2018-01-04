@@ -1,4 +1,18 @@
-# National Public Toilet Map
+---
+title: National Public Toilet Map
+author: Ernesto Serrano Collado
+header-includes:
+    - \usepackage[utf8]{inputenc}
+    - \usepackage{fancyhdr}
+    - \pagestyle{fancy}
+    - \DeclareUnicodeCharacter{}{o}
+abstract: Análisis del conjunto de datos National Public Toilet Map que muestra la ubicación de más de 17.000 baños publicos en toda Australia.
+keywords: toilet, map, datamining, KNIME, data analysis
+
+
+---
+
+# Tratamiento Inteligente de Datos
 
 ## Introducción
 
@@ -46,10 +60,10 @@ Casi todos los datos son de tipo booleano, pasamos a continuación a mostrar la 
 - AccessibleFemale *(boolean)*
 - AccessibleUnisex *(boolean)*
 - AccessibleNote *(boolean)*
-- ~~MLAK~~ *(boolean)*
+- ~~MLAK~~ *(boolean)* MLA Key (acceso con código)
 - ParkingAccessible
 - ~~AccessibleParkingNote~~ *(string)*
-- ~~Ambulant~~ *(boolean)*
+- ~~Ambulant~~ *(boolean)* (baño portail)
 - ~~LHTransfer~~ *(boolean)*
 - ~~RHTransfer~~ *(boolean)*
 - ~~AdultChange~~ *(boolean)*
@@ -59,8 +73,8 @@ Casi todos los datos son de tipo booleano, pasamos a continuación a mostrar la 
 - BabyChange *(boolean)*
 - Showers *(boolean)*
 - DrinkingWater *(boolean)*
-- SharpsDisposal *(boolean)*
-- SanitaryDisposal *(boolean)*
+- SharpsDisposal *(boolean)* Eliminación segura de agujas
+- SanitaryDisposal *(boolean)* Eliminación segura de productos sanitarios
 - ~~IconURL~~ *(string)*
 - ~~IconAltText~~ *(string)*
 - ~~Notes~~ *(string)*
@@ -84,17 +98,19 @@ La formula dice que para cualquier par de puntos sobre una esfera:
 
 donde:
 
- - haversin es la función haversine, haversin ( θ ) = sen 2 ( θ /2) = (1-cos ( θ ))/2
  - d es la distancia entre dos puntos (sobre un círculo máximo de la esfera, véase distancia esférica),
  - R es el radio de la esfera, en este caso 6371 que es el radio en kilómetros de la tierra,
- - φ 1 es la latitud del punto 1,
- - φ 2 es la latitud del punto 2, y
- - Δ λ es la diferencia de longitudes
+ - phi1, phi2 latitud del punto 1 y latitud del punto 2 en radianes,
+ - lambda1, lambda2 longitud del punto 1 y longitud del punto 2 en radianes.
 
 Se ha aplicado esa fórmula utilizando una hoja de cálculo para poder aplicarlo a cada W.C. público cruzandolo con los datos de las principales ciudades
 
 ```
-=ACOS(COS(RADIANS(90-Latitude_1)) _COS(RADIANS(90-Latitude_2)) +SIN(RADIANS(90-Latitude1)) SIN(RADIANS(90-Latitude_2)) _COS(RADIANS(Longitude1-Longitude2)) * 6371
+= ACOS(COS(RADIANS(90-Latitude_1))
+- COS(RADIANS(90-Latitude_2))
++ SIN(RADIANS(90-Latitude1)) SIN(RADIANS(90-Latitude_2))
+- COS(RADIANS(Longitude1-Longitude2))
+* 6371
 ```
 
 Una vez obtenidos estos datos adicionales se han agregado al dataset indicando tanto la mínima distancia como la máxima a cualquiera de las 10 principales ciudades de Australia con lo que tenemos las siguientes columnas adicionales:
@@ -145,26 +161,52 @@ Las correlaciones más importantes que se observan son:
 
 Una vez corregidos los datos hemos visualizado los distintos puntos en el mapa para hacernos una idea de la localización de los mismos, los distintos baños publicos aparecen en gris, y las principales ciudades aparecen marcadas en rojo.
 
-!["Mapa"](images/map.png)
+!["Mapa general"](images/map.png)
 
-## Análisis descriptivo
+También hemos visto interesante diferenciar los baños públicos dependiendo del estado, como podemos ver en el siguiente mapa.
+
+!["Mapa por estados"](images/map_states.png)
+
+Se aprecia como Nueva Gales del Sur, que es donde está Sidney, es la que mayor cantidad de baños tiene con 10591, y por otro lado los terriotorios del norte solo poseen 211.
+
+Otro dato curioso es la poca cantidad de baños que cuentan con un cambiador de ropa para adultos. Dato que contrasta con la gran cantidad de baños que cuentan con punto de eliminación segura de agujas, que además es mayor que la cantidad de baños que poseen agua potable.
+
+!["Cambiador para adultos (por estados)"](images/map_states_adultchange.png)
+
+!["Puntos de eliminación segura de agujas (por estados)"](images/map_states_sharpdisposal.png)
+
+!["Puntos de eliminación segura de agujas (por estados)"](images/map_states_drinkablewater.png)
+
+
+##  Análisis descriptivo
 
 ### Clustering
+
+El clustering necesita de una función de distancia y/o semejanza para extraer la matriz de proximidad, estas funciones trabajan muy bien con variables numéricas o incluso nominales ordinales, pero no tan bien con variables nominales no ordinales (Vila, 2014).
+En cualquier caso teniendo en cuenta que este dataset tiene variables muy distintas, unas pocas numéricas, principalmente nominales, algunas binarias, otras ordinales (sobre todo valoraciones personales) y algunas no ordinales (como el de los trabajo padres: Mjob y Fjob), donde la selección de la distancia con variables de tipos tan dispares requeriría la combinación de varias distancias de manera cuidadosa y los resultados obtenidos dependerá mucho de estas decisiones.
+
 
 ### Medidas de bondad
 
 ### Interpretacion
 
-
+### Reglas de asociación
 
 
 ## Análisis predictivo
 
-### Clasificando
+### Clasificación
+
+Las técnicas de clasificación han sido ya ampliamente utilizadas con este dataset, como se puede comprobar en los dos papers mencionados anteriormente, por ello resulta interesante probar con técnicas distintas y poder cotejar de cierta forma las conclusiones obtenidas.
 
 ### Regresión
 
+La regresión es interesante para predecir variables continuas en función de otras variables independientes de tipo numérico al menos, ya que constituye un modelo predictivo que busca una relación en forma de función (Vila, 2014).
+Teniendo en cuenta que los atributos de este dataset son principalmente nominales y que la variable que se quiere predecir es el consumo de alcohol, que es nominal, no tiene sentido aplicar estas técnicas para llegar a conclusiones respecto al consumo.
+
 ### Asociacion
+
+Las reglas de asociación son una técnica verdaderamente creada en data mining, que aporta resultados aún donde las demás pueden fallar. Describe dependencias significativas parciales o completas mediante un modelo descriptivo sin necesidad de tener conocimiento previo o hacer suposiciones sobre los datos (Vila, 2014). Puesto que trabaja bien con variables nominales, como las que predominan en este dataset, decidimos extraer reglas para obtener conclusiones respecto al consumo de alcohol.
 
 
 ## Conclusiones
