@@ -84,13 +84,22 @@ Casi todos los datos son de tipo booleano, pasamos a continuación a mostrar la 
 
 ### Datos adicionales
 
-Para poder saber la proximidad de los baños publicos a los principales nucleos de població hemos tenido que hacer uso del problema del par de puntos mas cercanos: https://en.wikipedia.org/wiki/Closest_pair_of_points_problem así como extraer la lista de las principales ciudades de australia para calcular la distancia hacia estas.
+Para poder saber la proximidad de los baños publicos a los principales nucleos de població hemos tenido que hacer uso del problema del par de puntos mas cercanos así como extraer la lista de las principales ciudades de australia para calcular la distancia hacia estas.
 
-La lista de las principales ciudades de australia la hemos extraido de aquí: https://en.wikipedia.org/wiki/List_of_cities_in_Australia_by_population y de aquí: http://www.geonames.org/AU/largest-cities-in-australia.html
+El problema de los puntos mas cercanos lo vimos en el siguiente artículo:
+ - https://en.wikipedia.org/wiki/Closest_pair_of_points_problem
+
+La lista de las principales ciudades de australia la hemos extraido de los siguientes sitios:
+ - https://en.wikipedia.org/wiki/List_of_cities_in_Australia_by_population
+ - http://www.geonames.org/AU/largest-cities-in-australia.html
+
+#### Población de australia (2016)
 
 !["Población"](images/population.png)
 
-Para calcular la distancia de cada baño publico hacia las principales ciudades se ha utilizado la *fórmula del haversine o semiverseneo* https://en.wikipedia.org/wiki/Haversine_formula que es una importante ecuación para la navegación astronómica, en cuanto al cálculo de la distancia de círculo máximo entre dos puntos de un globo sabiendo su longitud y su latitud.
+Para calcular la distancia de cada baño publico hacia las principales ciudades se ha utilizado la *fórmula del haversine o semiverseneo* que es una importante ecuación para la navegación astronómica, en cuanto al cálculo de la distancia de círculo máximo entre dos puntos de un globo sabiendo su longitud y su latitud.
+
+> Mas información: https://en.wikipedia.org/wiki/Haversine_formula
 
 La formula dice que para cualquier par de puntos sobre una esfera:
 
@@ -103,7 +112,7 @@ donde:
  - phi1, phi2 latitud del punto 1 y latitud del punto 2 en radianes,
  - lambda1, lambda2 longitud del punto 1 y longitud del punto 2 en radianes.
 
-Se ha aplicado esa fórmula utilizando una hoja de cálculo para poder aplicarlo a cada W.C. público cruzandolo con los datos de las principales ciudades
+Se ha aplicado esa fórmula utilizando una hoja de cálculo para poder aplicarlo a cada baño público cruzándolo con los datos de las principales ciudades
 
 ```
 = ACOS(COS(RADIANS(90-Latitude_1))
