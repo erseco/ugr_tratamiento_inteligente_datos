@@ -175,7 +175,7 @@ Otro dato curioso es la poca cantidad de baños que cuentan con un cambiador de 
 
 !["Puntos de eliminación segura de agujas (por estados)"](images/map_states_sharpdisposal.png)
 
-!["Puntos de eliminación segura de agujas (por estados)"](images/map_states_drinkablewater.png)
+!["Agua potable (por estados)"](images/map_states_drinkablewater.png)
 
 
 ##  Análisis descriptivo
