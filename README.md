@@ -142,15 +142,20 @@ Antes de aplicar las técnicas aprendidas en la asignatura realizaremos un pre-p
 
 Lo primero de todo hemos agregado un nodo *FileReader* que hemos configurado para leer nuestro dataset, en el mismo se han configurado los tipos de columna ya que por defecto *KNIME* lo lee todo automáticamente como cadenas y muchos de nuestros datos son de tipo booleano y de tipo numérico. Además se han omitido desde el propio *FileReader* algunas columnas que contenían textos que no nos resultan útiles para el procesamientos
 
-Se ha agregado un nodo de estadísticas para ver una primera aproximación visual de los datos que tenemos, hemos visto en los histogramas que la categorización de los elementos no parece del todo correcta, por ejemplo se hace una distinción entre Male, Female y Unisex que no tiene una correlación cuando debería ternerla
+Se ha agregado un nodo de estadísticas para ver una primera aproximación visual de los datos que tenemos.
 
-!["Estadísticas"](images/statistics_numeric.png)
+!["Estadísticas Numericas"](images/statistics_numeric.png)
+
+!["Estadísticas Nominales"](images/statistics_nominal.png)
+
+!["Resumen estadísticas"](images/statistics_topbottom.png)
+
 
 Para comprobar las observaciones realizadas mediante los histogramas pasamos a realizar una correlación lineal entre las variables con el objetivo de encontrar que las variables observadas tienen cierta correlación con las distancias agregadas y además comprobar si hay algunas variables con una correlación muy alta lo que puede indicar que se derivan unas de otras y se pueden eliminar del dataset al aportar la misma información.
 
 !["Correlacion"](images/correlation.png)
 
-Como se puede apreciar existen muchas X en esta matriz lo que indica que no existe correlación entre las variables, esto se puede deber a que muchas variables son booleanas y es complicado realizar una correlación entre variables booleanas o entre una variable booleana y otra numérica al no saber cuales son los valores superiores o inferiores.
+Como se puede apreciar existen muchas X en esta matriz lo que indica que no existe correlación entre las variables, esto se puede deber a que muchas variables son booleanas y es complicado realizar una correlación entre variables booleanas o entre una variable booleana y otra numérica.
 
 Las correlaciones más importantes que se observan son:
 
