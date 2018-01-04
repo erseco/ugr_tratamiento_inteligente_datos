@@ -1,3 +1,4 @@
+<!--
 ---
 title: National Public Toilet Map
 author: Ernesto Serrano Collado
@@ -8,9 +9,8 @@ header-includes:
     - \DeclareUnicodeCharacter{}{o}
 abstract: Análisis del conjunto de datos National Public Toilet Map que muestra la ubicación de más de 17.000 baños publicos en toda Australia.
 keywords: toilet, map, datamining, KNIME, data analysis
-
-
 ---
+-->
 
 # Tratamiento Inteligente de Datos
 
@@ -167,7 +167,7 @@ También hemos visto interesante diferenciar los baños públicos dependiendo de
 
 !["Mapa por estados"](images/map_states.png)
 
-Se aprecia como Nueva Gales del Sur, que es donde está Sidney, es la que mayor cantidad de baños tiene con 10591, y por otro lado los terriotorios del norte solo poseen 211.
+Se aprecia como Nueva Gales del Sur, que es donde está Sidney, es la que mayor cantidad de baños tiene con `10591`, y por otro lado los Territorios del Norte solo poseen `211`.
 
 Otro dato curioso es la poca cantidad de baños que cuentan con un cambiador de ropa para adultos. Dato que contrasta con la gran cantidad de baños que cuentan con punto de eliminación segura de agujas, que además es mayor que la cantidad de baños que poseen agua potable.
 
