@@ -218,6 +218,16 @@ En cualquier caso teniendo en cuenta que este dataset tiene variables muy distin
 
 Las técnicas de clasificación han sido ya ampliamente utilizadas con este dataset, como se puede comprobar en los dos papers mencionados anteriormente, por ello resulta interesante probar con técnicas distintas y poder cotejar de cierta forma las conclusiones obtenidas.
 
+
+Hemos configurado `KNIME` para realizar una clasificación básica agregando un *Decision Tree Learner* y viendo el árbol de decisión que ha creado, a continuación se puede como se ha configurado `KNIME`.
+
+!["Configuración para arbol de decisión"](images/knime_decisiontree.png)
+
+Le hemos dicho que aprenda en base a diferentes parámetros
+
+!["Arbol de decisión IsOpen por estados"](images/decisiontree_state_isopen.png)
+
+
 ### Regresión
 
 La regresión es interesante para predecir variables continuas en función de otras variables independientes de tipo numérico al menos, ya que constituye un modelo predictivo que busca una relación en forma de función (Vila, 2014).
