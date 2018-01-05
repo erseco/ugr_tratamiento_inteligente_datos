@@ -173,6 +173,10 @@ Las correlaciones más importantes que se observan son:
  - Correlación entre Status y IsOpen.
  - Correlación negativa entre Unisex y Male/Female.
 
+
+
+##  Análisis descriptivo
+
 Una vez corregidos los datos hemos visualizado los distintos puntos en el mapa para hacernos una idea de la localización de los mismos, los distintos baños publicos aparecen en gris, y las principales ciudades aparecen marcadas en rojo.
 
 !["Mapa general"](images/map.png)
@@ -197,7 +201,18 @@ Tambien podemos ver como la representación de las variables es uniforme a lo la
 
 Para el mismo se han usado las columnas Male, Female, DrinkingWater y SharpsDisposal.
 
-##  Análisis descriptivo
+
+Podemos ver como el promedio de distribución de aseos para mujeres es uniforme en todo el territorio así como el agua potable, pero Tasmania es el el que tiene un mayor número de puntos de eliminación de residuos para caravanas, esto es porque es un destino común para gente que viaja en caravana. En los territorios del sur es donde mayor número de aseos de pago econtraremos.
+
+!["Aseo para mujeres por estados"](images/pie_state_female.png)
+
+!["Agua potable por estados"](images/pie_state_drinkable.png)
+
+
+!["Papelera por estados"](images/pie_state_dumppoint.png)
+
+!["Aseo de pago por estados"](images/pie_state_payment.png)
+
 
 ### Clustering
 

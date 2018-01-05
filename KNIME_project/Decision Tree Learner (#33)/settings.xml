@@ -60,7 +60,7 @@
 <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
 <entry key="EnabledStatus" type="xboolean" value="true"/>
 </config>
-<entry key="firstSplitColumn" type="xstring" value="Status"/>
+<entry key="firstSplitColumn" type="xstring" value="IsOpen"/>
 <config key="binaryNominalSplit_Internals">
 <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
 <entry key="EnabledStatus" type="xboolean" value="true"/>
@@ -116,6 +116,6 @@
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="0c43e921-914d-4293-b9f1-828d40e8eecc"/>
+<entry key="file_store_id" type="xstring" value="4a0c309b-c7dc-46d2-86c5-061118578d8f"/>
 </config>
 </config>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="spec.xml">
 <entry key="spec_name" type="xstring" value="spec_name"/>
-<entry key="number_columns" type="xint" value="7"/>
+<entry key="number_columns" type="xint" value="6"/>
 <config key="column_spec_0">
 <entry key="column_name" type="xstring" value="Verified"/>
 <config key="element_names">
@@ -51,7 +51,7 @@
 <config key="column_properties"/>
 </config>
 <config key="column_spec_2">
-<entry key="column_name" type="xstring" value="Queensland"/>
+<entry key="column_name" type="xstring" value="Western Australia"/>
 <config key="element_names">
 <entry key="array-size" type="xint" value="0"/>
 </config>
@@ -68,7 +68,7 @@
 <config key="upper_bound">
 <entry key="datacell" type="xstring" value="org.knime.core.data.def.IntCell"/>
 <config key="org.knime.core.data.def.IntCell">
-<entry key="IntCell" type="xint" value="2817"/>
+<entry key="IntCell" type="xint" value="2374"/>
 </config>
 </config>
 </config>
@@ -92,37 +92,13 @@
 <config key="upper_bound">
 <entry key="datacell" type="xstring" value="org.knime.core.data.def.IntCell"/>
 <config key="org.knime.core.data.def.IntCell">
-<entry key="IntCell" type="xint" value="3876"/>
+<entry key="IntCell" type="xint" value="7908"/>
 </config>
 </config>
 </config>
 <config key="column_properties"/>
 </config>
 <config key="column_spec_4">
-<entry key="column_name" type="xstring" value="Western Australia"/>
-<config key="element_names">
-<entry key="array-size" type="xint" value="0"/>
-</config>
-<config key="column_type">
-<entry key="cell_class" type="xstring" value="org.knime.core.data.def.IntCell"/>
-</config>
-<config key="column_domain">
-<config key="lower_bound">
-<entry key="datacell" type="xstring" value="org.knime.core.data.def.IntCell"/>
-<config key="org.knime.core.data.def.IntCell">
-<entry key="IntCell" type="xint" value="0"/>
-</config>
-</config>
-<config key="upper_bound">
-<entry key="datacell" type="xstring" value="org.knime.core.data.def.IntCell"/>
-<config key="org.knime.core.data.def.IntCell">
-<entry key="IntCell" type="xint" value="1656"/>
-</config>
-</config>
-</config>
-<config key="column_properties"/>
-</config>
-<config key="column_spec_5">
 <entry key="column_name" type="xstring" value="Victoria"/>
 <config key="element_names">
 <entry key="array-size" type="xint" value="0"/>
@@ -140,13 +116,13 @@
 <config key="upper_bound">
 <entry key="datacell" type="xstring" value="org.knime.core.data.def.IntCell"/>
 <config key="org.knime.core.data.def.IntCell">
-<entry key="IntCell" type="xint" value="4752"/>
+<entry key="IntCell" type="xint" value="3925"/>
 </config>
 </config>
 </config>
 <config key="column_properties"/>
 </config>
-<config key="column_spec_6">
+<config key="column_spec_5">
 <entry key="column_name" type="xstring" value="South Australia"/>
 <config key="element_names">
 <entry key="array-size" type="xint" value="0"/>
@@ -164,7 +140,7 @@
 <config key="upper_bound">
 <entry key="datacell" type="xstring" value="org.knime.core.data.def.IntCell"/>
 <config key="org.knime.core.data.def.IntCell">
-<entry key="IntCell" type="xint" value="1442"/>
+<entry key="IntCell" type="xint" value="324"/>
 </config>
 </config>
 </config>
