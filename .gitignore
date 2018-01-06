@@ -32,9 +32,8 @@ vignettes/*.pdf
 *.utf8.md
 *.knit.md
 
-*.pdf
 *.xlsx
 *.ods
 
 .*
-.zip
+
