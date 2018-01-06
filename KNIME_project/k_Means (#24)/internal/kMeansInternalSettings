@@ -1,77 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="kMeans">
 <entry key="dimensions" type="xint" value="22"/>
-<entry key="ignoredColumns" type="xint" value="3"/>
+<entry key="ignoredColumns" type="xint" value="19"/>
 <config key="clusterCoverage">
 <entry key="array-size" type="xint" value="2"/>
-<entry key="0" type="xint" value="8"/>
-<entry key="1" type="xint" value="92"/>
+<entry key="0" type="xint" value="26"/>
+<entry key="1" type="xint" value="74"/>
 </config>
 <config key="kMeansCluster0">
-<entry key="array-size" type="xint" value="19"/>
-<entry key="0" type="xdouble" value="1.0"/>
-<entry key="1" type="xdouble" value="1.0"/>
-<entry key="2" type="xdouble" value="0.0"/>
-<entry key="3" type="xdouble" value="0.125"/>
-<entry key="4" type="xdouble" value="0.0"/>
-<entry key="5" type="xdouble" value="0.0"/>
-<entry key="6" type="xdouble" value="0.0"/>
-<entry key="7" type="xdouble" value="0.375"/>
-<entry key="8" type="xdouble" value="0.125"/>
-<entry key="9" type="xdouble" value="0.125"/>
-<entry key="10" type="xdouble" value="0.125"/>
-<entry key="11" type="xdouble" value="0.125"/>
-<entry key="12" type="xdouble" value="0.0"/>
-<entry key="13" type="xdouble" value="0.125"/>
-<entry key="14" type="xdouble" value="0.25"/>
-<entry key="15" type="xdouble" value="0.125"/>
-<entry key="16" type="xdouble" value="0.125"/>
-<entry key="17" type="xdouble" value="1638.25"/>
-<entry key="18" type="xdouble" value="2962.0"/>
+<entry key="array-size" type="xint" value="3"/>
+<entry key="0" type="xdouble" value="0.2692307692307692"/>
+<entry key="1" type="xdouble" value="0.5769230769230769"/>
+<entry key="2" type="xdouble" value="0.7307692307692307"/>
 </config>
 <config key="kMeansCluster1">
-<entry key="array-size" type="xint" value="19"/>
-<entry key="0" type="xdouble" value="0.7391304347826086"/>
-<entry key="1" type="xdouble" value="0.7391304347826086"/>
-<entry key="2" type="xdouble" value="0.13043478260869565"/>
-<entry key="3" type="xdouble" value="0.07608695652173914"/>
-<entry key="4" type="xdouble" value="0.043478260869565216"/>
-<entry key="5" type="xdouble" value="0.03260869565217391"/>
-<entry key="6" type="xdouble" value="0.0"/>
-<entry key="7" type="xdouble" value="0.3695652173913043"/>
-<entry key="8" type="xdouble" value="0.22826086956521738"/>
-<entry key="9" type="xdouble" value="0.2391304347826087"/>
-<entry key="10" type="xdouble" value="0.2717391304347826"/>
-<entry key="11" type="xdouble" value="0.22826086956521738"/>
-<entry key="12" type="xdouble" value="0.16304347826086957"/>
-<entry key="13" type="xdouble" value="0.043478260869565216"/>
-<entry key="14" type="xdouble" value="0.06521739130434782"/>
-<entry key="15" type="xdouble" value="0.16304347826086957"/>
-<entry key="16" type="xdouble" value="0.20652173913043478"/>
-<entry key="17" type="xdouble" value="187.69565217391303"/>
-<entry key="18" type="xdouble" value="3148.1521739130435"/>
+<entry key="array-size" type="xint" value="3"/>
+<entry key="0" type="xdouble" value="0.0"/>
+<entry key="1" type="xdouble" value="0.0"/>
+<entry key="2" type="xdouble" value="0.0"/>
 </config>
 <config key="FeatureNames">
 <entry key="array-size" type="xint" value="22"/>
-<entry key="0" type="xstring" value="Male"/>
-<entry key="1" type="xstring" value="Female"/>
-<entry key="2" type="xstring" value="Unisex"/>
-<entry key="3" type="xstring" value="DumpPoint"/>
-<entry key="4" type="xstring" value="AccessLimited"/>
-<entry key="5" type="xstring" value="PaymentRequired"/>
-<entry key="6" type="xstring" value="KeyRequired"/>
-<entry key="7" type="xstring" value="Parking"/>
-<entry key="8" type="xstring" value="AccessibleMale"/>
-<entry key="9" type="xstring" value="AccessibleFemale"/>
-<entry key="10" type="xstring" value="AccessibleUnisex"/>
-<entry key="11" type="xstring" value="ParkingAccessible"/>
-<entry key="12" type="xstring" value="BabyChange"/>
-<entry key="13" type="xstring" value="Showers"/>
-<entry key="14" type="xstring" value="DrinkingWater"/>
-<entry key="15" type="xstring" value="SharpsDisposal"/>
-<entry key="16" type="xstring" value="SanitaryDisposal"/>
-<entry key="17" type="xstring" value="distance_min"/>
-<entry key="18" type="xstring" value="distance_max"/>
+<entry key="0" type="xstring" value="DrinkingWater"/>
+<entry key="1" type="xstring" value="SharpsDisposal"/>
+<entry key="2" type="xstring" value="SanitaryDisposal"/>
+<entry key="3" type="xstring" isnull="true" value=""/>
+<entry key="4" type="xstring" isnull="true" value=""/>
+<entry key="5" type="xstring" isnull="true" value=""/>
+<entry key="6" type="xstring" isnull="true" value=""/>
+<entry key="7" type="xstring" isnull="true" value=""/>
+<entry key="8" type="xstring" isnull="true" value=""/>
+<entry key="9" type="xstring" isnull="true" value=""/>
+<entry key="10" type="xstring" isnull="true" value=""/>
+<entry key="11" type="xstring" isnull="true" value=""/>
+<entry key="12" type="xstring" isnull="true" value=""/>
+<entry key="13" type="xstring" isnull="true" value=""/>
+<entry key="14" type="xstring" isnull="true" value=""/>
+<entry key="15" type="xstring" isnull="true" value=""/>
+<entry key="16" type="xstring" isnull="true" value=""/>
+<entry key="17" type="xstring" isnull="true" value=""/>
+<entry key="18" type="xstring" isnull="true" value=""/>
 <entry key="19" type="xstring" isnull="true" value=""/>
 <entry key="20" type="xstring" isnull="true" value=""/>
 <entry key="21" type="xstring" isnull="true" value=""/>

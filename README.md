@@ -240,8 +240,11 @@ Le hemos dicho que aprenda en base al estado y el campos IsOpen que como ya vimo
 
 ### Regresión
 
-La regresión es interesante para predecir variables continuas en función de otras variables independientes de tipo numérico al menos, ya que constituye un modelo predictivo que busca una relación en forma de función (Vila, 2014).
-Teniendo en cuenta que los atributos de este dataset son principalmente nominales y que la variable que se quiere predecir es el consumo de alcohol, que es nominal, no tiene sentido aplicar estas técnicas para llegar a conclusiones respecto al consumo.
+En cuanto a la regresión, se ha utilizado un *RegressionTreeLearner* junto a su correspondiente predictor y nos ha dado los resultado que se pueden ver en las imagenes adjuntas. Se ha buscando la regresión en base al campo SharpDisposal.
+
+!["Configuración para la regresión"](images/knime_regression.png)
+!["Puntuacion de la regresión"](images/regression_score.png)
+!["Puntuacion numérica de la regresión"](images/regression_numericscore.png)
 
 ### Asociacion
 

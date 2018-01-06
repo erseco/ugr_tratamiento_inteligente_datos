@@ -22,7 +22,13 @@
 </config>
 <config key="cfgColmns">
 <config key="InclList">
-<entry key="array-size" type="xint" value="19"/>
+<entry key="array-size" type="xint" value="3"/>
+<entry key="0" type="xstring" value="DrinkingWater"/>
+<entry key="1" type="xstring" value="SharpsDisposal"/>
+<entry key="2" type="xstring" value="SanitaryDisposal"/>
+</config>
+<config key="ExclList">
+<entry key="array-size" type="xint" value="16"/>
 <entry key="0" type="xstring" value="Male"/>
 <entry key="1" type="xstring" value="Female"/>
 <entry key="2" type="xstring" value="Unisex"/>
@@ -37,14 +43,8 @@
 <entry key="11" type="xstring" value="ParkingAccessible"/>
 <entry key="12" type="xstring" value="BabyChange"/>
 <entry key="13" type="xstring" value="Showers"/>
-<entry key="14" type="xstring" value="DrinkingWater"/>
-<entry key="15" type="xstring" value="SharpsDisposal"/>
-<entry key="16" type="xstring" value="SanitaryDisposal"/>
-<entry key="17" type="xstring" value="distance_min"/>
-<entry key="18" type="xstring" value="distance_max"/>
-</config>
-<config key="ExclList">
-<entry key="array-size" type="xint" value="0"/>
+<entry key="14" type="xstring" value="distance_min"/>
+<entry key="15" type="xstring" value="distance_max"/>
 </config>
 <entry key="keep_all_columns_selected" type="xboolean" value="false"/>
 </config>
@@ -82,7 +82,7 @@
 <entry key="index" type="xint" value="2"/>
 <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
 <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
-<entry key="port_object_summary" type="xstring" value="Rows: 2, Cols: 19"/>
+<entry key="port_object_summary" type="xstring" value="Rows: 2, Cols: 3"/>
 <entry key="port_dir_location" type="xstring" value="port_2"/>
 </config>
 <config key="port_3">
@@ -97,6 +97,6 @@
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="8f702628-9764-4f59-b3bf-ea8588279fd8"/>
+<entry key="file_store_id" type="xstring" value="7e299234-5858-4756-83c2-29bebc6ce0ca"/>
 </config>
 </config>
