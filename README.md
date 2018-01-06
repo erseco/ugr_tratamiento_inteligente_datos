@@ -218,11 +218,8 @@ Como la mayor parte de las variables son **boolean** no podemos usar el método 
 
 !["Configuración Clustering en KNIME"](images/knime_clustering.png)
 
-### Medidas de bondad
-
-### Interpretacion
-
 ### Reglas de asociación
+
 
 
 ## Análisis predictivo
@@ -245,10 +242,6 @@ En cuanto a la regresión, se ha utilizado un *RegressionTreeLearner* junto a su
 !["Configuración para la regresión"](images/knime_regression.png)
 !["Puntuacion de la regresión"](images/regression_score.png)
 !["Puntuacion numérica de la regresión"](images/regression_numericscore.png)
-
-### Asociacion
-
-Las reglas de asociación son una técnica verdaderamente creada en data mining, que aporta resultados aún donde las demás pueden fallar. Describe dependencias significativas parciales o completas mediante un modelo descriptivo sin necesidad de tener conocimiento previo o hacer suposiciones sobre los datos (Vila, 2014). Puesto que trabaja bien con variables nominales, como las que predominan en este dataset, decidimos extraer reglas para obtener conclusiones respecto al consumo de alcohol.
 
 
 ## Conclusiones
