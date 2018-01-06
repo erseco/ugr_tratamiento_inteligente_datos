@@ -216,6 +216,7 @@ Como la mayor parte de las variables son **boolean** no podemos usar el método 
 
 !["Clustering"](images/clustering_disposal.png)
 
+!["Configuración Clustering en KNIME"](images/knime_clustering.png)
 
 ### Medidas de bondad
 
