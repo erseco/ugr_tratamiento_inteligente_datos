@@ -212,11 +212,13 @@ Podemos ver como el promedio de distribución de aseos para mujeres es uniforme 
 
 ### Clustering
 
-Como la mayor parte de las variables son **boolean** no podemos usar el método de las K-medias directamente por lo que hay que agregar algunos nodos *RuleEngine* para poder convertir los valores a enteros. Usando dos campos que tiene correlación como son SharpsDisposal y SanitaryDisposal y vemos como los clasifica correctamente.
+Como la mayor parte de las variables son **boolean** no podemos usar el método de las K-medias directamente por lo que hay que agregar algunos nodos *RuleEngine* para poder convertir los valores a enteros. Usando dos campos que tiene correlación como son SharpsDisposal y SanitaryDisposal y vemos como los clasifica correctamente. Tambien se ha relizado el método de las K-Medias con los campos distance_min y distance_max.
 
-!["Clustering"](images/clustering_disposal.png)
-
+!["Clustering SharpDisposal"](images/clustering_disposal.png)
+!["Clustering distancias"](images/scatter_clustering_distancmax_distancemin.png)
 !["Configuración Clustering en KNIME"](images/knime_clustering.png)
+
+>No se ha podido realizar un *HierarchicalClustering* por problemas de memoria.
 
 ### Reglas de asociación
 
