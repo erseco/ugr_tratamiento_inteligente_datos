@@ -164,7 +164,7 @@ Para comprobar las observaciones realizadas mediante los histogramas pasamos a r
 
 !["Correlacion"](images/correlation.png)
 
-Como se puede apreciar existen muchas X en esta matriz lo que indica que no existe correlación entre las variables, esto se puede deber a que muchas variables son booleanas y es complicado realizar una correlación entre variables booleanas o entre una variable booleana y otra numérica.
+Como se puede apreciar no existen muchas X en esta matriz lo que indica que hay correlación entre las variables.
 
 Las correlaciones más importantes que se observan son:
 
@@ -172,8 +172,6 @@ Las correlaciones más importantes que se observan son:
  - Correlación entre AccesibleMale y AccessibleFemale.
  - Correlación entre Status y IsOpen.
  - Correlación negativa entre Unisex y Male/Female.
-
-
 
 ##  Análisis descriptivo
 
@@ -201,13 +199,11 @@ Tambien podemos ver como la representación de las variables es uniforme a lo la
 
 Para el mismo se han usado las columnas Male, Female, DrinkingWater y SharpsDisposal.
 
-
-Podemos ver como el promedio de distribución de aseos para mujeres es uniforme en todo el territorio así como el agua potable, pero Tasmania es el el que tiene un mayor número de puntos de eliminación de residuos para caravanas, esto es porque es un destino común para gente que viaja en caravana. En los territorios del sur es donde mayor número de aseos de pago econtraremos.
+Podemos ver como el promedio de distribución de aseos para mujeres es uniforme en todo el territorio así como el agua potable, pero Tasmania es el el que tiene un mayor número de puntos de eliminación de residuos para caravanas, esto es porque es un destino común para gente que viaja en caravana. En los territorios del sur es donde mayor número de aseos de pago econtraremos. a continuación se muestran los gráficos donde se aprecian esos detalles
 
 !["Aseo para mujeres por estados"](images/pie_state_female.png)
 
 !["Agua potable por estados"](images/pie_state_drinkable.png)
-
 
 !["Papelera por estados"](images/pie_state_dumppoint.png)
 
@@ -216,8 +212,9 @@ Podemos ver como el promedio de distribución de aseos para mujeres es uniforme 
 
 ### Clustering
 
-El clustering necesita de una función de distancia y/o semejanza para extraer la matriz de proximidad, estas funciones trabajan muy bien con variables numéricas o incluso nominales ordinales, pero no tan bien con variables nominales no ordinales (Vila, 2014).
-En cualquier caso teniendo en cuenta que este dataset tiene variables muy distintas, unas pocas numéricas, principalmente nominales, algunas binarias, otras ordinales (sobre todo valoraciones personales) y algunas no ordinales (como el de los trabajo padres: Mjob y Fjob), donde la selección de la distancia con variables de tipos tan dispares requeriría la combinación de varias distancias de manera cuidadosa y los resultados obtenidos dependerá mucho de estas decisiones.
+Como la mayor parte de las variables son **boolean** no podemos usar el método de las K-medias directamente por lo que hay que agregar algunos nodos *RuleEngine* para poder convertir los valores a enteros. Usando dos campos que tiene correlación como son SharpsDisposal y SanitaryDisposal y vemos como los clasifica correctamente.
+
+!["Clustering"](images/clustering_disposal.png)
 
 
 ### Medidas de bondad
@@ -231,14 +228,11 @@ En cualquier caso teniendo en cuenta que este dataset tiene variables muy distin
 
 ### Clasificación
 
-Las técnicas de clasificación han sido ya ampliamente utilizadas con este dataset, como se puede comprobar en los dos papers mencionados anteriormente, por ello resulta interesante probar con técnicas distintas y poder cotejar de cierta forma las conclusiones obtenidas.
-
-
 Hemos configurado `KNIME` para realizar una clasificación básica agregando un *Decision Tree Learner* y viendo el árbol de decisión que ha creado, a continuación se puede como se ha configurado `KNIME`.
 
 !["Configuración para arbol de decisión"](images/knime_decisiontree.png)
 
-Le hemos dicho que aprenda en base a diferentes parámetros
+Le hemos dicho que aprenda en base al estado y el campos IsOpen que como ya vimos tenían una alta correlación y como podemos ver ha clasificado esos parametros del dataset.
 
 !["Arbol de decisión IsOpen por estados"](images/decisiontree_state_isopen.png)
 
