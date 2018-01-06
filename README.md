@@ -1,16 +1,3 @@
-<!--
----
-title: National Public Toilet Map
-author: Ernesto Serrano Collado
-header-includes:
-    - \usepackage[utf8]{inputenc}
-    - \usepackage{fancyhdr}
-    - \pagestyle{fancy}
-    - \DeclareUnicodeCharacter{}{o}
-abstract: Análisis del conjunto de datos National Public Toilet Map que muestra la ubicación de más de 17.000 baños publicos en toda Australia.
-keywords: toilet, map, datamining, KNIME, data analysis
----
--->
 
 # Tratamiento Inteligente de Datos
 
@@ -97,7 +84,7 @@ La lista de las principales ciudades de australia la hemos extraido de los sigui
 
 !["Población"](images/population.png)
 
-Para calcular la distancia de cada baño publico hacia las principales ciudades se ha utilizado la *fórmula del haversine o semiverseneo* que es una importante ecuación para la navegación astronómica, en cuanto al cálculo de la distancia de círculo máximo entre dos puntos de un globo sabiendo su longitud y su latitud.
+Para calcular la distancia de cada baño publico hacia las principales ciudades se ha utilizado la *fórmula del haversine o semiverseno* que es una importante ecuación para la navegación astronómica, en cuanto al cálculo de la distancia de círculo máximo entre dos puntos de un globo sabiendo su longitud y su latitud.
 
 > Mas información: https://en.wikipedia.org/wiki/Haversine_formula
 
@@ -139,7 +126,7 @@ Una vez obtenidos estos datos adicionales se han agregado al dataset indicando t
 
 ### Objetivos
 
-El objetivo principal es ver si hay mayor cantidad de urinarios públicos cerca de los nucleos urbanos, y si los servicios que ofrecen los mismos se ven incrementados por la proximidad.
+El objetivo principal es ver si hay mayor cantidad de urinarios públicos cerca de los núcleos urbanos, y si los servicios que ofrecen los mismos se ven incrementados por la proximidad.
 
 ## Minería de datos
 
@@ -193,13 +180,13 @@ Otro dato curioso es la poca cantidad de baños que cuentan con un cambiador de 
 
 !["Agua potable (por estados)"](images/map_states_drinkablewater.png)
 
-Tambien podemos ver como la representación de las variables es uniforme a lo largo de todo el país en el histograma siguiente:
+También podemos ver como la representación de las variables es uniforme a lo largo de todo el país en el histograma siguiente:
 
 !["Histograma por estados"](images/histogram_states.png)
 
 Para el mismo se han usado las columnas Male, Female, DrinkingWater y SharpsDisposal.
 
-Podemos ver como el promedio de distribución de aseos para mujeres es uniforme en todo el territorio así como el agua potable, pero Tasmania es el el que tiene un mayor número de puntos de eliminación de residuos para caravanas, esto es porque es un destino común para gente que viaja en caravana. En los territorios del sur es donde mayor número de aseos de pago econtraremos. a continuación se muestran los gráficos donde se aprecian esos detalles
+Podemos ver como el promedio de distribución de aseos para mujeres es uniforme en todo el territorio así como el agua potable, pero Tasmania es el el que tiene un mayor número de puntos de eliminación de residuos para caravanas, esto es porque es un destino común para gente que viaja en caravana. En los territorios del sur es donde mayor número de aseos de pago encontraremos. a continuación se muestran los gráficos donde se aprecian esos detalles
 
 !["Aseo para mujeres por estados"](images/pie_state_female.png)
 
@@ -212,7 +199,7 @@ Podemos ver como el promedio de distribución de aseos para mujeres es uniforme 
 
 ### Clustering
 
-Como la mayor parte de las variables son **boolean** no podemos usar el método de las K-medias directamente por lo que hay que agregar algunos nodos *RuleEngine* para poder convertir los valores a enteros. Usando dos campos que tiene correlación como son SharpsDisposal y SanitaryDisposal y vemos como los clasifica correctamente. Tambien se ha relizado el método de las K-Medias con los campos distance_min y distance_max.
+Como la mayor parte de las variables son **boolean** no podemos usar el método de las K-medias directamente por lo que hay que agregar algunos nodos *RuleEngine* para poder convertir los valores a enteros. Usando dos campos que tiene correlación como son SharpsDisposal y SanitaryDisposal y vemos como los clasifica correctamente. También se ha realizado el método de las K-Medias con los campos distance_min y distance_max.
 
 !["Clustering SharpDisposal"](images/clustering_disposal.png)
 !["Clustering distancias"](images/scatter_clustering_distancmax_distancemin.png)
